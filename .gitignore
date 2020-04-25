@@ -1,0 +1,6 @@
+*
+!/.gitignore
+!/.profile
+!/.zprofile
+!/.tmux.conf
+!/.config/fish/conf.d/my.fish
