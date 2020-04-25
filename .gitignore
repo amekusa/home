@@ -1,5 +1,6 @@
 *
 !/.gitignore
+!/.gitignore_global
 !/.profile
 !/.zprofile
 !/.tmux.conf
