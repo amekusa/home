@@ -3,7 +3,7 @@
 #  Place this at: ~/
 # ================================
 
-export HOMEBREW_PREFIX="${HOME}/Library/Homebrew"
+export HOMEBREW_PREFIX="${HOME}/.brew"
 export HOMEBREW_TEMP="${HOMEBREW_PREFIX}/.tmp"
 export NODE_PATH="${HOMEBREW_PREFIX}/lib/node_modules"
 export COMPOSER_HOME="${HOME}/.composer"
@@ -13,3 +13,6 @@ export PATH="./node_modules/.bin:./vendor/bin:${COMPOSER_HOME}/vendor/bin:${HOME
 alias ls="ls -G"
 alias ll="ls -l"
 alias la="ls -la"
+
+alias start-server="brew services run mariadb; php-fpm -D; sudo nginx"
+alias stop-server="brew services stop mariadb; killall php-fpm; sudo nginx -s stop"
