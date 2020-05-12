@@ -1,16 +1,6 @@
-# --------------------------------
-#  ZSH Configuration
-#  Place this at: ~/
-# ================================
+#  Zsh Login Configuration
+#  This is loaded only when Zsh was launched as a login shell
+# ------------------------------------------------------------ ---- -- -
 
-# Inherit envs & aliases from BASH
+# Inherit from Bash
 source ~/.profile
-
-# Autocompletion
-autoload -Uz compinit && compinit
-
-# cd hook (cd then ls)
-function chpwd() {
-    emulate -L zsh
-    ls
-}
