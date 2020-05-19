@@ -6,4 +6,5 @@
 !/.bashrc
 !/.zshrc
 !/.tmux.conf
+!/.[Bb]rewfile
 !/.config/fish/conf.d/my.fish
