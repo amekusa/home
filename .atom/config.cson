@@ -19,5 +19,7 @@
     tabLength: 4
   "exception-reporting":
     userId: "987b9162-6481-40e0-8aa3-efbb1de0ce7c"
+  tabs:
+    enableMruTabSwitching: false
   welcome:
     showOnStartup: false
