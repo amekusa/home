@@ -8,3 +8,7 @@
 !/.tmux.conf
 !/.[Bb]rewfile
 !/.config/fish/conf.d/my.fish
+
+# Atom
+!/.atom
+!/.atom/config.cson

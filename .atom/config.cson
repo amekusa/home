@@ -1,0 +1,23 @@
+"*":
+  core:
+    automaticallyUpdate: false
+    disabledPackages: [
+      "spell-check"
+      "github"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "loved-syntax"
+    ]
+  editor:
+    fontFamily: "Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    softTabs: false
+    tabLength: 4
+  "exception-reporting":
+    userId: "987b9162-6481-40e0-8aa3-efbb1de0ce7c"
+  welcome:
+    showOnStartup: false
