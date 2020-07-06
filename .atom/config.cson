@@ -1,4 +1,9 @@
 "*":
+  "autocomplete-plus":
+    autoActivationDelay: 200
+    includeCompletionsFromAllBuffers: false
+    minimumWordLength: 2
+    strictMatching: true
   core:
     automaticallyUpdate: false
     disabledPackages: [
