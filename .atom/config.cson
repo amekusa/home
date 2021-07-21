@@ -16,7 +16,7 @@
       "loved-syntax"
     ]
   editor:
-    fontFamily: "Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontFamily: "Fira Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace"
     preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
