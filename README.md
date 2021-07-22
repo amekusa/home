@@ -54,10 +54,11 @@ $ npm i -g npm-watch
 $ npm i -g rollup
 $ npm i -g @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/plugin-commonjs
 
-# Testing, Code coverage:
+# Debug, Testing, Code Coverage:
+$ npm i -g source-map-support
 $ npm i -g mocha nyc codecov
 
-# Documentation generator:
+# Documentation Generator:
 $ npm i -g jsdoc
 ```
 
