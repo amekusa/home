@@ -51,7 +51,8 @@ $ npm i -g npm-check-updates
 $ npm i -g npm-watch
 
 # Bundler:
-$ npm i -g rollup @rollup/plugin-node-resolve @rollup/plugin-commonjs
+$ npm i -g rollup
+$ npm i -g @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/plugin-commonjs
 
 # Testing, Code coverage:
 $ npm i -g mocha nyc codecov
