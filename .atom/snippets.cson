@@ -26,12 +26,24 @@
   'require':
     'prefix': 'require'
     'body': "require('${1:module}')"
+  'new Promise((resolve, reject) => {})':
+    'prefix': 'prom'
+    'body': "new Promise((resolve, reject) => {$1})"
+  'describe()':
+    'prefix': 'describe'
+    'body': "describe(`$1`, () => {$2});"
+  'it()':
+    'prefix': 'it'
+    'body': "it(`$1`, () => {$2});"
   '@param':
     'prefix': 'aparam'
-    'body': '@param {${1:any}} ${2:arg}'
+    'body': "@param {${1:any}} ${2:arg}"
   '@return':
     'prefix': 'areturn'
-    'body': '@return $1'
+    'body': "@return $1"
   '@type':
     'prefix': 'atype'
-    'body': '@type {${1:any}}'
+    'body': "@type {${1:any}}"
+  '@link':
+    'prefix': 'alink'
+    'body': "{@link $1}"

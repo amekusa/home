@@ -1,5 +1,5 @@
 #  Zsh Configuration
-# ------------------- ---- -- -
+# ------------------ ////
 
 # *** [START OH-MY-ZSH CONF] ***
 # If you come from bash you might have to change your $PATH.
@@ -28,7 +28,7 @@ ZSH_THEME="pygmalion"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
