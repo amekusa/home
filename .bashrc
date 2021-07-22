@@ -1,5 +1,5 @@
 #  Bash Configuration
-# -------------------- ---- -- -
+# -------------------- ////
 
 # Shortcuts for ls with some options
 alias ls='ls -G'

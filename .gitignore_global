@@ -1,8 +1,8 @@
-# Global .gitignore
+#  Global .gitignore
 #
-# To take effect, place this file on your home dir and run this command:
-# $ git config --global core.excludesfile ~/.gitignore_global
-#
+#  To take effect, place this file on your home dir and run this command:
+#  $ git config --global core.excludesfile ~/.gitignore_global
+# ----------------------------------------------------------------------- ////
 
 # Created by https://www.gitignore.io/api/node,linux,macos,windows,eclipse
 # Edit at https://www.gitignore.io/?templates=node,linux,macos,windows,eclipse

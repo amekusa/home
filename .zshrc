@@ -1,5 +1,5 @@
 #  Zsh Configuration
-# ------------------- ---- -- -
+# ------------------ ////
 
 # *** [START OH-MY-ZSH CONF] ***
 # If you come from bash you might have to change your $PATH.

@@ -1,6 +1,6 @@
 #  Bash Login Configuration
 #  This is loaded only when Bash was launched as a login shell
-# ------------------------------------------------------------- ---- -- -
+# ------------------------------------------------------------ ////
 
 export HOMEBREW_PREFIX="${HOME}/.brew"
 export HOMEBREW_TEMP="${HOMEBREW_PREFIX}/.tmp"
