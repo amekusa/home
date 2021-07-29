@@ -14,6 +14,7 @@ alias srctree='open -a SourceTree'
 
 # NPM Shortcuts
 alias nrun='npm run'
+alias nbuild = 'npm run build'
 alias ntest='npm run test'
 alias nwatch='npm run watch'
 
