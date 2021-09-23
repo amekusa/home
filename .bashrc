@@ -1,6 +1,9 @@
 #  Bash Configuration
 # ------------------- ////
 
+# Launch tmux
+[[ $TERM != "screen" ]] && exec tmux
+
 # Shortcuts for ls with some options
 alias ls='ls -G'
 alias ll='ls -l'
