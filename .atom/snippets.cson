@@ -26,6 +26,12 @@
   'require':
     'prefix': 'require'
     'body': "require('${1:module}')"
+  'for':
+    'prefix': 'for'
+    'body': "for (let i = 0; i < $1.length; i++) $2"
+  'constructor':
+    'prefix': 'constr'
+    'body': "constructor($1) {$2}"
   'new Promise((resolve, reject) => {})':
     'prefix': 'prom'
     'body': "new Promise((resolve, reject) => {$1})"
