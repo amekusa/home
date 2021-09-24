@@ -13,15 +13,21 @@ $ brew doctor
 
 ### Packages to install
 ```sh
-# Utilities:
+# Additional repositories:
 $ brew tap homebrew/services
-$ brew install tmux tig
+$ brew tap homebrew/cask-fonts
+
+# Utilities:
+$ brew install tmux tig lazygit googler
 
 # Web server, SQL, PHP:
 $ brew install nginx mariadb php composer
 
 # NodeJS:
 $ brew install node yarn
+
+# Fonts:
+$ brew install --cask font-fira-code font-iosevka
 
 # Ungoogled Chromium for browser testing:
 $ brew cask install eloston-chromium
