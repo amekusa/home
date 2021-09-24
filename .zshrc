@@ -113,7 +113,7 @@ source ~/.bashrc
 autoload -Uz compinit && compinit
 
 # cd hook (cd then ls)
-function chpwd() {
+chpwd() {
   emulate -L zsh
   ls
 }
