@@ -4,6 +4,11 @@
 # Launch tmux
 [ -z "$TMUX" ] && exec tmux
 
+# Reload the current shell
+sh=bash
+[ ! -z $ZSH_VERSION ] && sh=zsh
+alias reload="echo 'Reloading .${sh}rc ...' &&. ~/.${sh}rc"
+
 # Shortcuts for ls with some options
 alias ls='ls -G'
 alias ll='ls -l'
