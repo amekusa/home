@@ -6,7 +6,7 @@
 
 # Reload the current shell
 sh=bash
-[ ! -z $ZSH_VERSION ] && sh=zsh
+[ -z $ZSH_VERSION ] || sh=zsh
 alias reload="echo 'Reloading .${sh}rc ...' &&. ~/.${sh}rc"
 
 # Shortcuts for ls with some options
