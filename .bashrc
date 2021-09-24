@@ -2,7 +2,7 @@
 # ------------------- ////
 
 # Launch tmux
-[[ $TERM != "screen" ]] && exec tmux
+[ -z "$TMUX" ] && exec tmux
 
 # Shortcuts for ls with some options
 alias ls='ls -G'
