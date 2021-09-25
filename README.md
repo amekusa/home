@@ -17,6 +17,9 @@ $ brew doctor
 $ brew tap homebrew/services
 $ brew tap homebrew/cask-fonts
 
+# Shell (zsh)
+$ brew install zsh
+
 # Utilities:
 $ brew install tmux tig lazygit googler
 
@@ -35,9 +38,29 @@ $ brew cask install eloston-chromium
 
 Beware NOT to use `brew bundle` because it makes the installation process EXTREMELY slow for unknow reason.
 
-### Maintenance
+### Enable the homebrew version of zsh as the default shell
+
 ```sh
-# Cleanup chaches:
+# Check the path to the zsh you want to enable
+$ which zsh
+
+# Add the path to /etc/shells
+$ sudo nano /etc/shells
+
+# Set the path as your default shell
+$ chsh -s $(which zsh)
+```
+
+**After restarting the computer**, make sure that `$SHELL` is pointing at the correct path.
+
+```sh
+$ echo $SHELL
+```
+
+### Maintenance
+
+```sh
+# Cleanup caches
 $ brew cleanup -s
 
 # Update packages
@@ -62,7 +85,7 @@ $ npm i -g @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/plugin-commo
 
 # Debug, Testing, Code Coverage:
 $ npm i -g source-map-support
-$ npm i -g mocha nyc codecov
+$ npm i -g mocha c8 codecov
 
 # Documentation Generator:
 $ npm i -g jsdoc
