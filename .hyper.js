@@ -23,6 +23,9 @@ module.exports = {
       blur:  .8
     },
 
+    // select with alt+drag on Mac
+    macOptionSelectionMode: 'force',
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
