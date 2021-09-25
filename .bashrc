@@ -20,9 +20,6 @@ alias plz='sudo $(fc -ln -1)'
 # lazygit
 alias lg='lazygit'
 
-# Open SourceTree from commandline
-alias srctree='open -a SourceTree'
-
 # NPM Shortcuts
 alias nrun='npm run'
 alias nbuild='npm run build'
