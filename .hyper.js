@@ -3,8 +3,8 @@
 // See https://hyper.is#cfg for all currently supported options.
 
 let plugins = [
+  'hyperterm-summon',
   'hyper-opacity',
-  // 'hyper-transparent',
 
   [ // themes
     'hyper-one-dark',
@@ -16,7 +16,12 @@ let plugins = [
 
 module.exports = {
   config: {
-
+    // hyper-summon
+    summon: {
+      hideDock: false,
+      hideOnBlur: false,
+      hotkey: 'Control+;',
+    },
     // hyper-opacity
     opacity: {
       focus: .9,
