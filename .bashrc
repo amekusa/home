@@ -17,6 +17,9 @@ alias la='ls -la'
 # Run the previous command with sudo
 alias plz='sudo $(fc -ln -1)'
 
+# lazygit
+alias lg='lazygit'
+
 # Open SourceTree from commandline
 alias srctree='open -a SourceTree'
 
