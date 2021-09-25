@@ -1,8 +1,20 @@
 # Home Directory
 
+## Shell
+
+```sh
+# Install Oh-My-Zsh
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Install Powerlevel10k
+$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+```
+
 ---
 
 ## Homebrew
+
 ```sh
 # Install:
 $ git clone https://github.com/Homebrew/brew.git .brew
@@ -30,7 +42,7 @@ $ brew install nginx mariadb php composer
 $ brew install node yarn
 
 # Fonts:
-$ brew install --cask font-fira-code font-iosevka
+$ brew install --cask font-fira-code font-fira-code-nerd-font font-iosevka
 
 # Ungoogled Chromium for browser testing:
 $ brew cask install eloston-chromium
@@ -72,6 +84,7 @@ $ brew update
 ## NPM
 
 ### Packages to install
+
 ```sh
 # Utilities:
 $ npm i -g npm-check-updates
@@ -92,6 +105,7 @@ $ npm i -g jsdoc
 ```
 
 ### Maintenance
+
 ```sh
 # To see all the packages installed:
 $ npm ls -g --depth=0
@@ -99,3 +113,16 @@ $ npm ls -g --depth=0
 # Update packages (required: npm-check-updates)
 $ ncu -g -u
 ```
+
+---
+
+## Git
+
+```sh
+# Global ignore
+$ git config --global core.excludesfile ~/.gitignore_global
+
+# Ddefault editor (nano)
+$ git config --global core.editor "nano"
+```
+
