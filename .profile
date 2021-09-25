@@ -4,6 +4,7 @@
 
 export HOMEBREW_PREFIX="${HOME}/.brew"
 export HOMEBREW_TEMP="${HOMEBREW_PREFIX}/.tmp"
+export HOMEBREW_NO_AUTO_UPDATE=1
 # export NODE_PATH="${HOMEBREW_PREFIX}/lib/node_modules" # NodeJS (Homebrew)
 export COMPOSER_HOME="${HOME}/.composer"
 export ANDROID_HOME="${HOMEBREW_PREFIX}/opt/android-sdk"
