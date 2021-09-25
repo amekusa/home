@@ -33,6 +33,16 @@ alias gg='googler -l en -g us'
 alias start-server='brew services run mariadb; php-fpm -D; sudo nginx'
 alias stop-server='brew services stop mariadb; killall php-fpm; sudo nginx -s stop'
 
+# Search utility
+f() {
+  if [ -z "$1" ] || [ -z "$2" ]; then
+    echo "Usage:"
+    echo "  f path query [maxdepth]"
+    return 1
+  fi
+  find $1 -name "*${2}*" $([ -z "$3" ] || echo "-maxdepth $3")
+}
+
 # NVM (Node Version Manager)
 # NOTE: To install NVM:
 #       $ cd
