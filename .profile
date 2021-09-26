@@ -2,6 +2,8 @@
 #  This is loaded only when Bash was launched as a login shell
 # ------------------------------------------------------------ ////
 
+export EDITOR=$(which nano)
+
 export HOMEBREW_PREFIX="${HOME}/.brew"
 export HOMEBREW_TEMP="${HOMEBREW_PREFIX}/.tmp"
 export HOMEBREW_NO_AUTO_UPDATE=1
