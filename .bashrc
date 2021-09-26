@@ -40,7 +40,9 @@ f() {
     echo "  f path query [maxdepth]"
     return 1
   fi
-  find $1 -name "*${2}*" $([ -z "$3" ] || echo "-maxdepth $3")
+  local depth=2
+  [ -z "$3" ] || depth="$3"
+  find $1 -name "*${2}*" -maxdepth "$depth"
 }
 
 # NVM (Node Version Manager)
