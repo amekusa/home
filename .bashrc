@@ -20,6 +20,9 @@ alias plz='sudo $(fc -ln -1)'
 # lazygit
 alias lg='lazygit'
 
+# fix micro + tmux conflicts
+alias micro='TERM=xterm-256color micro'
+
 # NPM Shortcuts
 alias nrun='npm run'
 alias nbuild='npm run build'
