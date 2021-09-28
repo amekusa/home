@@ -50,6 +50,19 @@ f() {
   find "$dir" -iname "*${1}*" -maxdepth "$depth"
 }
 
+fcd() {
+  if [ -z "$1" ]; then
+    echo "Usage:"
+    echo "  fcd query [basedir] [maxdepth]"
+    return 1
+  fi
+  local dir='.'
+  [ -z "$2" ] || dir="$2"
+  local depth=2
+  [ -z "$3" ] || depth="$3"
+  cd $(find "$dir" -type d -iname "*${1}*" -maxdepth "$depth" -print -quit)
+}
+
 # NVM (Node Version Manager)
 # NOTE: To install NVM:
 #       $ cd
