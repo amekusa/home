@@ -38,14 +38,16 @@ alias stop-server='brew services stop mariadb; killall php-fpm; sudo nginx -s st
 
 # Search utility
 f() {
-  if [ -z "$1" ] || [ -z "$2" ]; then
+  if [ -z "$1" ]; then
     echo "Usage:"
-    echo "  f path query [maxdepth]"
+    echo "  f query [basedir] [maxdepth]"
     return 1
   fi
+  local dir='.'
+  [ -z "$2" ] || dir="$2"
   local depth=2
   [ -z "$3" ] || depth="$3"
-  find $1 -name "*${2}*" -maxdepth "$depth"
+  find "$dir" -iname "*${1}*" -maxdepth "$depth"
 }
 
 # NVM (Node Version Manager)
