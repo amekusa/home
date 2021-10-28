@@ -43,10 +43,8 @@ f() {
     echo "  f query [basedir] [maxdepth]"
     return 1
   fi
-  local dir='.'
-  [ -z "$2" ] || dir="$2"
-  local depth=2
-  [ -z "$3" ] || depth="$3"
+  local dir='.'; [ -z "$2" ] || dir="$2"
+  local depth=2; [ -z "$3" ] || depth="$3"
   find "$dir" -iname "*${1}*" -maxdepth "$depth"
 }
 
@@ -56,11 +54,14 @@ fcd() {
     echo "  fcd query [basedir] [maxdepth]"
     return 1
   fi
-  local dir='.'
-  [ -z "$2" ] || dir="$2"
-  local depth=2
-  [ -z "$3" ] || depth="$3"
-  cd $(find "$dir" -type d -iname "*${1}*" -maxdepth "$depth" -print -quit)
+  local dir='.'; [ -z "$2" ] || dir="$2"
+  local depth=2; [ -z "$3" ] || depth="$3"
+  local dest=$(find "$dir" -type d -iname "*${1}*" -maxdepth "$depth" -print -quit)
+  if [ -z $dest ]; then
+    echo "'${1}' is not found"
+    return 1
+  fi
+  cd "$dest"
 }
 
 # NVM (Node Version Manager)
