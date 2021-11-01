@@ -1,8 +1,19 @@
 "*":
+  "atom-beautify":
+    json:
+      beautify_on_save: true
+      end_with_newline: true
+      eval_code: true
+      indent_char: " "
+      indent_size: 2
+      indent_with_tabs: false
   "autocomplete-plus":
     autoActivationDelay: 200
+    confirmCompletion: "enter"
+    enableAutoActivation: false
     includeCompletionsFromAllBuffers: false
     minimumWordLength: 2
+    moveToCancel: true
     strictMatching: true
   core:
     automaticallyUpdate: false
@@ -15,6 +26,9 @@
       "one-dark-ui"
       "loved-syntax"
     ]
+  docblockr:
+    lower_case_primitives: true
+    simple_mode: true
   editor:
     fontFamily: "Fira Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace"
     preferredLineLength: 120
@@ -22,6 +36,7 @@
     showInvisibles: true
     softTabs: false
     tabLength: 4
+    tabType: "hard"
   "exception-reporting":
     userId: "987b9162-6481-40e0-8aa3-efbb1de0ce7c"
   tabs:
