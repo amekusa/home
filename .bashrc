@@ -45,7 +45,7 @@ f() {
   fi
   local dir='.'; [ -z "$2" ] || dir="$2"
   local depth=2; [ -z "$3" ] || depth="$3"
-  find "$dir" -iname "*${1}*" -maxdepth "$depth"
+  find "$dir" -maxdepth "$depth" -iname "*${1}*"
 }
 
 fcd() {
@@ -56,7 +56,7 @@ fcd() {
   fi
   local dir='.'; [ -z "$2" ] || dir="$2"
   local depth=2; [ -z "$3" ] || depth="$3"
-  local dest=$(find "$dir" -type d -iname "*${1}*" -maxdepth "$depth" -print -quit)
+  local dest=$(find "$dir" -maxdepth "$depth" -type d -iname "*${1}*" -print -quit)
   if [ -z $dest ]; then
     echo "'${1}' is not found"
     return 1
