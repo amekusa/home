@@ -2,7 +2,7 @@
 # ------------------- ////
 
 # Launch tmux
-[ -z "$TMUX" ] && tmux
+#[ -z "$TMUX" ] && exec tmux
 
 # Reload the current shell
 sh=bash
