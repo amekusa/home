@@ -1,5 +1,15 @@
 # Home Directory
 
+## How to install
+
+```sh
+cd ~
+git init
+git remote add origin git@github.com:amekusa/home.git
+git fetch
+git pull origin master
+```
+
 ## Shell
 
 ```sh
@@ -125,4 +135,3 @@ $ git config --global core.excludesfile ~/.gitignore_global
 # Ddefault editor (nano)
 $ git config --global core.editor "nano"
 ```
-
