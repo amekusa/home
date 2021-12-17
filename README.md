@@ -6,7 +6,6 @@
 cd ~
 git init
 git remote add origin git@github.com:amekusa/home.git
-git fetch
 git pull origin master
 ```
 
@@ -18,7 +17,6 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
 
 # Install Powerlevel10k
 $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
 ```
 
 ---
@@ -58,7 +56,14 @@ $ brew install --cask font-fira-code font-fira-code-nerd-font font-iosevka
 $ brew cask install eloston-chromium
 ```
 
-Beware NOT to use `brew bundle` because it makes the installation process EXTREMELY slow for unknow reason.
+### Fixing curl failing due to expired certs
+1. Download https://curl.se/ca/cacert.pem
+2. Replace `/etc/ssl/cert.pem` with it
+```sh
+cd /etc/ssl
+sudo mv cert.pem cert.pem.org
+sudo cp ~/Downloads/cacert.pem ./cert.pem
+```
 
 ### Enable the homebrew version of zsh as the default shell
 
