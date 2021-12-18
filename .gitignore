@@ -18,7 +18,7 @@
 !/.hyper.js
 !/.p10k.zsh
 
-!/.config
+!/.config/
 
 # Atom
 !/.atom
