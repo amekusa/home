@@ -1,6 +1,7 @@
 # Home Directory
 
-## How to install
+## Getting started
+Initialize your home directory as a git repository.
 
 ```sh
 cd ~
@@ -9,14 +10,11 @@ git remote add origin git@github.com:amekusa/home.git
 git pull origin master
 ```
 
-## Shell
+Then, run `.update.sh` to install all the required zsh plugins.
 
 ```sh
-# Install Oh-My-Zsh
-$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Install Powerlevel10k
-$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+chmod u+x .update.sh
+./.update.sh
 ```
 
 ---
