@@ -3,6 +3,8 @@
 !/.gitignore
 !/.gitignore_global
 
+!/.update.sh
+
 !/.bash_profile
 !/.zprofile
 !/.bashrc
