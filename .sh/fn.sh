@@ -6,10 +6,14 @@ sh=bash
 [ -z $ZSH_VERSION ] || sh=zsh
 alias reload="echo 'Reloading .${sh}rc ...' &&. ~/.${sh}rc"
 
+# cd
+alias ..='cd ..'
+alias ...='cd ../../'
+
 # ls with options
 alias ls='ls -pG'
 alias ll='ls -phlG'
-alias la='ls -phAlG'
+alias la='ls -phalG'
 
 # run the previous command with sudo
 alias plz='sudo $(fc -ln -1)'
