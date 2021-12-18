@@ -5,6 +5,7 @@ https://github.com/zsh-users/zsh-autosuggestions
 https://github.com/zsh-users/zsh-syntax-highlighting
 https://github.com/zsh-users/zsh-completions
 https://github.com/agkozak/zsh-z
+https://github.com/romkatv/powerlevel10k
 )
 
 cd "$HOME"
