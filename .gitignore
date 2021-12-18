@@ -2,10 +2,16 @@
 !/README.md
 !/.gitignore
 !/.gitignore_global
-!/.profile
+
+!/.bash_profile
 !/.zprofile
 !/.bashrc
 !/.zshrc
+
+!/.sh/
+!/.sh/env.sh
+!/.sh/fn.sh
+
 !/.tmux.conf
 !/.hyper.js
 !/.p10k.zsh

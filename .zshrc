@@ -1,5 +1,5 @@
-#  Zsh Configuration
-# ------------------ ////
+#  zsh setup
+# ----------- ---- -- -
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -114,8 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # *** [END OH-MY-ZSH CONF] ***
 
-# Inherit from Bash
-source ~/.bashrc
+source ~/.sh/fn.sh
 
 # Autocompletion
 autoload -Uz compinit && compinit

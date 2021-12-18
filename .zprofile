@@ -1,6 +1,4 @@
-#  Zsh Login Configuration
-#  This is loaded only when Zsh was launched as a login shell
-# ----------------------------------------------------------- ////
+#  zsh login setup
+# ----------------- ---- -- -
 
-# Inherit from Bash
-source ~/.profile
+source ~/.sh/env.sh
