@@ -1,24 +1,24 @@
 #!/bin/bash
 
+
 repos=(
 https://github.com/zsh-users/zsh-autosuggestions
 https://github.com/zsh-users/zsh-syntax-highlighting
 https://github.com/zsh-users/zsh-completions
 https://github.com/agkozak/zsh-z
 https://github.com/romkatv/powerlevel10k
+https://github.com/nvm-sh/nvm
 )
 
 cd "$HOME"
 
-[ -d .zsh ] || mkdir .zsh
-cd .zsh
-
 echo "Checking repositories..."
+cd .sh
 
-for i in "${repos[@]}"; do
+for repo in "${repos[@]}"; do
   echo
-  echo "> $i.git"
-  dir=$(basename "$i")
+  echo "> $repo.git"
+  dir=$(basename "$repo")
 
   if [ -d "$dir" ]; then
     echo ">> Found at $PWD/$dir"
@@ -30,7 +30,7 @@ for i in "${repos[@]}"; do
 
   else
     echo ">> Cloning into $PWD/$dir"...
-    git clone "$i.git"
+    git clone "$repo.git"
     echo ">> Done."
   fi
 
