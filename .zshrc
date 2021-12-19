@@ -1,6 +1,11 @@
 #  zsh setup
 # ----------- ---- -- -
 
+# options
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt EXTENDED_HISTORY
+
 # functions & aliases
 source ~/.sh/fn.sh
 
