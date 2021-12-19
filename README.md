@@ -23,35 +23,32 @@ chmod u+x .update.sh
 
 ```sh
 # Install:
-$ git clone https://github.com/Homebrew/brew.git .brew
+git clone https://github.com/Homebrew/brew.git .brew
 
 # Make sure if there are any issues with:
-$ brew doctor
+brew doctor
 ```
 
 ### Packages to install
 ```sh
 # Additional repositories:
-$ brew tap homebrew/services
-$ brew tap homebrew/cask-fonts
+brew tap homebrew/services
+brew tap homebrew/cask-fonts
 
 # Shell (zsh)
-$ brew install zsh
+brew install zsh
 
 # Utilities:
-$ brew install tmux tig lazygit googler
+brew install tmux tig lazygit googler
 
 # Web server, SQL, PHP:
-$ brew install nginx mariadb php composer
-
-# NodeJS:
-$ brew install node yarn
+brew install nginx mariadb php composer
 
 # Fonts:
-$ brew install --cask font-fira-code font-fira-code-nerd-font font-iosevka
+brew install --cask font-fira-code font-fira-code-nerd-font font-iosevka
 
 # Ungoogled Chromium for browser testing:
-$ brew cask install eloston-chromium
+brew cask install eloston-chromium
 ```
 
 ### Fixing curl failing due to expired certs
@@ -67,64 +64,69 @@ sudo cp ~/Downloads/cacert.pem ./cert.pem
 
 ```sh
 # Check the path to the zsh you want to enable
-$ which zsh
+which zsh
 
 # Add the path to /etc/shells
-$ sudo nano /etc/shells
+sudo nano /etc/shells
 
 # Set the path as your default shell
-$ chsh -s $(which zsh)
+chsh -s $(which zsh)
 ```
 
 **After restarting the computer**, make sure that `$SHELL` is pointing at the correct path.
 
 ```sh
-$ echo $SHELL
+echo $SHELL
 ```
 
 ### Maintenance
 
 ```sh
 # Cleanup caches
-$ brew cleanup -s
+brew cleanup -s
 
 # Update packages
-$ brew update
+brew update
 ```
 
 ---
 
 ## NPM
+Install latest node via nvm.
+
+```sh
+nvm install node
+```
 
 ### Packages to install
 
 ```sh
 # Utilities:
-$ npm i -g npm-check-updates
+npm i -g npm-check-updates
 
 # Automation:
-$ npm i -g npm-watch
+npm i -g npm-watch
 
 # Bundler:
-$ npm i -g rollup
-$ npm i -g @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/plugin-commonjs
+npm i -g rollup
+npm i -g @rollup/plugin-babel @rollup/plugin-node-resolve @rollup/plugin-commonjs
 
 # Debug, Testing, Code Coverage:
-$ npm i -g source-map-support
-$ npm i -g mocha c8 codecov
+npm i -g source-map-support
+npm i -g mocha c8 codecov
 
 # Documentation Generator:
-$ npm i -g jsdoc
+npm i -g jsdoc
 ```
 
 ### Maintenance
 
 ```sh
 # To see all the packages installed:
-$ npm ls -g --depth=0
+npm ls -g --depth=0
 
 # Update packages (required: npm-check-updates)
-$ ncu -g -u
+ncu -g -u
 ```
 
 ---
@@ -133,8 +135,8 @@ $ ncu -g -u
 
 ```sh
 # Global ignore
-$ git config --global core.excludesfile ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 # Ddefault editor (nano)
-$ git config --global core.editor "nano"
+git config --global core.editor "nano"
 ```
