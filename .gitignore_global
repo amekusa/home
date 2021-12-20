@@ -29,6 +29,7 @@
 
 # ---- NodeJS ----
 node_modules/
+coverage/
 
 
 # ---- macOS ----
