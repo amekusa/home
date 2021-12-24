@@ -18,9 +18,12 @@ chpwd() {
   ls
 }
 
-# zsh plugins
-source ~/.sh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# z
 source ~/.sh/zsh-z/zsh-z.plugin.zsh
+
+# autosuggestions
+source ~/.sh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # powerlevel10k
 source ~/.sh/powerlevel10k/powerlevel10k.zsh-theme
