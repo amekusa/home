@@ -20,6 +20,7 @@ PATH="./vendor/bin:$COMPOSER_HOME/vendor/bin:$PATH"
 
 # node (n)
 export N_PREFIX="$HOME/.n"
+export NODE_PATH="$N_PREFIX/lib/node_modules"
 PATH="./node_modules/.bin:$N_PREFIX/bin:$PATH"
 
 # export resulting path
