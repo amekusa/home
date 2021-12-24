@@ -18,13 +18,9 @@ PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH"
 export COMPOSER_HOME="$HOME/.composer"
 PATH="./vendor/bin:$COMPOSER_HOME/vendor/bin:$PATH"
 
-# nvm (node version manager)
-export NVM_DIR="$HOME/.sh/nvm"
-source "$NVM_DIR/nvm.sh"
-
-# node
-export NODE_PATH="$(npm root -g)"
-PATH="./node_modules/.bin:$PATH"
+# node (n)
+export N_PREFIX="$HOME/.n"
+PATH="./node_modules/.bin:$N_PREFIX/bin:$PATH"
 
 # export resulting path
 export PATH
