@@ -10,7 +10,7 @@ git remote add origin git@github.com:amekusa/home.git
 git pull origin master
 ```
 
-Then, run `.update.sh` to install all the required zsh plugins.
+Then, run `.update.sh` to install all the prerequisites.
 
 ```sh
 chmod u+x .update.sh
@@ -85,17 +85,20 @@ echo $SHELL
 # Cleanup caches
 brew cleanup -s
 
+# Uinstall unnecessary packages
+brew autoremove
+
 # Update packages
 brew update
 ```
 
 ---
 
-## NPM
-Install latest node via nvm.
+## Node.js
+Install latest node via n.
 
 ```sh
-nvm install node
+n latest
 ```
 
 ### Packages to install
