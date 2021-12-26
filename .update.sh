@@ -1,38 +1,39 @@
 #!/bin/bash
 
-repos=(
-https://github.com/zsh-users/zsh-autosuggestions
-https://github.com/zsh-users/zsh-syntax-highlighting
-https://github.com/zsh-users/zsh-completions
-https://github.com/agkozak/zsh-z
-https://github.com/romkatv/powerlevel10k
-https://github.com/tj/n
+REPOS=(
+  https://github.com/zsh-users/zsh-autosuggestions
+  https://github.com/zsh-users/zsh-syntax-highlighting
+  https://github.com/zsh-users/zsh-completions
+  https://github.com/agkozak/zsh-z
+  https://github.com/romkatv/powerlevel10k
+  https://github.com/tj/n
 )
 
-cd "$HOME"
+BASE_DIR="$HOME/.sh"
+REPOS_DIR="$BASE_DIR/repos"
 
-[ -d .sh ] || mkdir .sh
-cd .sh
+[ -d "$REPOS_DIR" ] || mkdir -p "$REPOS_DIR"
+cd "$REPOS_DIR" || exit 1
 
 echo "Checking repositories..."
 
-for repo in "${repos[@]}"; do
+for repo in "${REPOS[@]}"; do
   echo
-  echo "> $repo.git"
+  echo "=> $repo.git"
   dir=$(basename "$repo")
 
   if [ -d "$dir" ]; then
-    echo ">> Found at $PWD/$dir"
+    echo " -> Found at $PWD/$dir"
     cd "$dir"
-    echo ">> Updating..."
+    echo " -> Updating..."
     git pull origin master
-    echo ">> Done."
+    echo " -> Done."
     cd ..
 
   else
-    echo ">> Cloning into $PWD/$dir"...
+    echo " -> Cloning into $PWD/$dir"...
     git clone "$repo.git"
-    echo ">> Done."
+    echo " -> Done."
   fi
 
 done
@@ -42,5 +43,5 @@ echo "All the repositories have been updated."
 
 echo
 echo "Installing n..."
-cd n && PREFIX="$N_PREFIX" make install
+cd "$REPOS_DIR/n" && PREFIX="$N_PREFIX" make install
 echo "Done."
