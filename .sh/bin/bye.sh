@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WAIT=15
+WAIT=30
 
 echo "Maintenance tasks will start in $WAIT seconds ..."
 echo "Display will be turned off."
