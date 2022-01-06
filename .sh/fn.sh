@@ -1,10 +1,8 @@
 #  shell functions and aliases
 # ----------------------------- ---- -- -
 
-# reload the current shell
-sh=bash
-[ -z $ZSH_VERSION ] || sh=zsh
-alias reload="echo 'Reloading .${sh}rc ...' &&. ~/.${sh}rc"
+
+# ---- aliases ----
 
 # cd
 alias ..='cd ..'
@@ -36,6 +34,18 @@ alias gg='googler -l en -g us'
 # start/stop server
 alias start-server='brew services run mariadb; php-fpm -D; sudo nginx'
 alias stop-server='brew services stop mariadb; killall php-fpm; sudo nginx -s stop'
+
+
+# ---- functions ----
+
+# reload .bashrc or .zshrc
+reload() {
+  local sh=bash
+  [ -z $ZSH_VERSION ] || sh=zsh
+  echo "Reloading .${sh}rc ..."
+  source ~/.${sh}rc && echo "Done."
+  echo
+}
 
 # find
 f() {
