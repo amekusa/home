@@ -3,8 +3,6 @@
 !/.gitignore
 !/.gitignore_global
 
-!/.update.sh
-
 !/.bash_profile
 !/.zprofile
 !/.bashrc
@@ -13,6 +11,9 @@
 !/.sh/
 !/.sh/env.sh
 !/.sh/fn.sh
+!/.sh/bin/
+!/.sh/bin/bye.sh
+!/.sh/bin/update.sh
 
 !/.tmux.conf
 !/.hyper.js
@@ -21,7 +22,7 @@
 !/.config/
 
 # Atom
-!/.atom
+!/.atom/
 !/.atom/config.cson
 !/.atom/keymap.cson
 !/.atom/snippets.cson

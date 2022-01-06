@@ -40,8 +40,9 @@ done
 
 echo
 echo "All the repositories have been updated."
-
 echo
+
 echo "Installing n..."
 cd "$REPOS_DIR/n" && PREFIX="$N_PREFIX" make install
 echo "Done."
+echo
