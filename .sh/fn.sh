@@ -75,3 +75,27 @@ fcd() {
   fi
   cd "$dest"
 }
+
+# site health checker
+http() {
+  if [ -z "$1" ]; then
+    echo "Usage:"
+    echo "  http <location>"
+    echo "  http <location> -s (for HTTPS)"
+    return 1
+  fi
+  local protocol=http
+  [ "$2" = "-s" ] && protocol=https
+  local ua="Site Health Check"
+  curl -Is -A "$ua" -o /dev/null -w '%{http_code} (%{time_total}s)\n' "$protocol://$1"
+}
+
+# site health checker (HTTPS)
+https() {
+  if [ -z "$1" ]; then
+    echo "Usage:"
+    echo "  https <location>"
+    return 1
+  fi
+  http "$1" -s
+}
