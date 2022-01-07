@@ -2,7 +2,7 @@
 
 WAIT=30
 
-echo "Maintenance tasks will start in $WAIT seconds ..."
+echo "Maintenance tasks will start in $WAIT seconds..."
 echo "Display will be turned off."
 
 sleep $WAIT

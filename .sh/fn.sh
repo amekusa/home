@@ -51,7 +51,7 @@ reload() {
 f() {
   if [ -z "$1" ]; then
     echo "Usage:"
-    echo "  f query [basedir] [maxdepth]"
+    echo "  f <query> [basedir] [maxdepth]"
     return 1
   fi
   local dir='.'; [ -z "$2" ] || dir="$2"
@@ -63,7 +63,7 @@ f() {
 fcd() {
   if [ -z "$1" ]; then
     echo "Usage:"
-    echo "  fcd query [basedir] [maxdepth]"
+    echo "  fcd <query> [basedir] [maxdepth]"
     return 1
   fi
   local dir='.'; [ -z "$2" ] || dir="$2"
