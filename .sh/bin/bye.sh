@@ -25,9 +25,7 @@ echo "---- COMPOSER ----"
 composer global update
 
 echo
-echo "All done."
-echo
-
 pkill -P $$
-
+echo
+echo "All done."
 echo
