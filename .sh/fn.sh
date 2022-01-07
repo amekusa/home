@@ -87,7 +87,10 @@ http() {
   local protocol=http
   [ "$2" = "-s" ] && protocol=https
   local ua="Site Health Check"
-  curl -Is -A "$ua" -o /dev/null -w '%{http_code} (%{time_total}s)\n' "$protocol://$1"
+  local r=$(curl -Is -A "$ua" -o /dev/null -w '%{http_code} (%{time_total}s)\n' "$protocol://$1")
+  echo "$r"
+  local s="${r:0:3}"
+  [ "$s" -ge 200 ] && [ "$s" -lt 400 ]
 }
 
 # site health checker (HTTPS)
