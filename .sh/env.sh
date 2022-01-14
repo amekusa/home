@@ -14,6 +14,9 @@ PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH"
 # node (homebrew)
 # export NODE_PATH="$HOMEBREW_PREFIX/lib/node_modules"
 
+# python
+PATH="$HOME/Library/Python/3.9/bin:$PATH"
+
 # composer
 export COMPOSER_HOME="$HOME/.composer"
 PATH="./vendor/bin:$COMPOSER_HOME/vendor/bin:$PATH"
