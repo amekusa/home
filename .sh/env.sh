@@ -23,6 +23,9 @@ export N_PREFIX="$HOME/.n"
 export NODE_PATH="$N_PREFIX/lib/node_modules"
 PATH="./node_modules/.bin:$N_PREFIX/bin:$PATH"
 
+# rust
+PATH="$HOME/.cargo/bin:$PATH"
+
 # custom executables
 PATH="$PATH:$HOME/.sh/bin"
 
