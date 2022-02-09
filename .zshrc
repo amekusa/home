@@ -9,6 +9,10 @@
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 
+# fn + delete = forward delete
+bindkey "^[[3~"  delete-char
+bindkey "^[3;5~" delete-char
+
 # functions & aliases
 source ~/.sh/fn.sh
 
