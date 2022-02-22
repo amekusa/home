@@ -1,7 +1,7 @@
 #  colors and font styles
 # ------------------------ ---- -- -
 # example:
-# $ echo -e "${GRN}Hello World${RESET}"
+# $ echo -e "${GRN}Hello World${RST}"
 
 # escape sequence
 ESC="\033["
@@ -18,4 +18,5 @@ MAG="${ESC}0;35m";  BMAG="${ESC}1;35m";  UMAG="${ESC}4;35m";  IMAG="${ESC}0;95m"
 CYN="${ESC}0;36m";  BCYN="${ESC}1;36m";  UCYN="${ESC}4;36m";  ICYN="${ESC}0;96m";  BICYN="${ESC}1;96m";  ON_CYN="${ESC}46m";  ON_ICYN="${ESC}0;106m"
 WHT="${ESC}0;37m";  BWHT="${ESC}1;37m";  UWHT="${ESC}4;37m";  IWHT="${ESC}0;97m";  BIWHT="${ESC}1;97m";  ON_WHT="${ESC}47m";  ON_IWHT="${ESC}0;107m"
 
-RESET="${ESC}0m"
+# reset
+RST="${ESC}0m"

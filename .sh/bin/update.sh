@@ -20,19 +20,19 @@ echo "Checking repositories..."
 
 for repo in "${REPOS[@]}"; do
   echo
-  echo -e "=> ${CYN}$repo.git${RESET}"
+  echo -e "=> ${CYN}$repo.git${RST}"
   dir=$(basename "$repo")
 
   if [ -d "$dir" ]; then
     echo " -> Found at $PWD/$dir"
     cd "$dir"
     echo " -> Updating..."
-    git pull origin master && echo -e " -> ${GRN}Done.${RESET}"
+    git pull origin master && echo -e " -> ${GRN}Done.${RST}"
     cd ..
 
   else
     echo " -> Cloning into $PWD/$dir"...
-    git clone "$repo.git" && echo -e " -> ${GRN}Done.${RESET}"
+    git clone "$repo.git" && echo -e " -> ${GRN}Done.${RST}"
   fi
 
 done
