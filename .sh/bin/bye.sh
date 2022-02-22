@@ -1,4 +1,6 @@
 #!/bin/bash
+BASE="$HOME/.sh"
+source "$BASE/lib/styles.sh"
 
 WAIT=30
 
@@ -10,18 +12,17 @@ caffeinate -i &
 pmset displaysleepnow
 
 echo
-echo "---- HOMEBREW ----"
+echo "${CYN}---- HOMEBREW ----${RST}"
 brew update
 brew upgrade
-brew autoremove
 brew cleanup
 
 echo
-echo "---- NPM ----"
+echo "${CYN}---- NPM ----${RST}"
 npm update -g
 
 echo
-echo "---- COMPOSER ----"
+echo "${CYN}---- COMPOSER ----${RST}"
 composer global update
 
 echo
