@@ -2,4 +2,4 @@
 # ------------------ ---- -- -
 
 # environment variables
-source ~/.sh/env.sh
+. ~/.sh/env.sh

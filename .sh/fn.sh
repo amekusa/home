@@ -43,7 +43,7 @@ reload() {
   local sh=bash
   [ -z $ZSH_VERSION ] || sh=zsh
   echo "Reloading .${sh}rc ..."
-  source ~/.${sh}rc && echo "Done."
+  . ~/.${sh}rc && echo "Done."
   echo
 }
 

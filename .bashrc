@@ -2,4 +2,4 @@
 # ------------ ---- -- -
 
 # functions & aliases
-source ~/.sh/fn.sh
+. ~/.sh/fn.sh

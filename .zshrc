@@ -14,7 +14,7 @@ bindkey "^[[3~"  delete-char
 bindkey "^[3;5~" delete-char
 
 # functions & aliases
-source ~/.sh/fn.sh
+. ~/.sh/fn.sh
 
 # cd hook (ls after cd)
 chpwd() {
@@ -23,19 +23,19 @@ chpwd() {
 }
 
 # z
-source ~/.sh/repos/zsh-z/zsh-z.plugin.zsh
+. ~/.sh/repos/zsh-z/zsh-z.plugin.zsh
 
 # autosuggestions
-source ~/.sh/repos/zsh-autosuggestions/zsh-autosuggestions.zsh
+. ~/.sh/repos/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # powerlevel10k
-source ~/.sh/repos/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.p10k.zsh
+. ~/.sh/repos/powerlevel10k/powerlevel10k.zsh-theme
+. ~/.p10k.zsh
 # NOTE: to customize, run `p10k configure`
 
 # syntax highlighting
-source ~/.sh/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. ~/.sh/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # NOTE: this line should be at the end of .zshrc
 
 # initialize the completion system
