@@ -12,17 +12,17 @@ caffeinate -i &
 pmset displaysleepnow
 
 echo
-echo "${CYN}---- HOMEBREW ----${RST}"
+echo -e "---- ${B_}HOMEBREW${RST} ----"
 brew update
 brew upgrade
 brew cleanup
 
 echo
-echo "${CYN}---- NPM ----${RST}"
+echo -e "---- ${B_}NPM${RST} ----"
 npm update -g
 
 echo
-echo "${CYN}---- COMPOSER ----${RST}"
+echo -e "---- ${B_}COMPOSER${RST} ----"
 composer global update
 
 echo
