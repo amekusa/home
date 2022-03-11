@@ -12,16 +12,17 @@
 !/.sh/env.sh
 !/.sh/fn.sh
 !/.sh/bin/
-!/.sh/bin/bye.sh
-!/.sh/bin/update.sh
+!/.sh/bin/*.sh
 !/.sh/lib/
-!/.sh/lib/styles.sh
+!/.sh/lib/*.sh
 
 !/.tmux.conf
 !/.hyper.js
 !/.p10k.zsh
 
 !/.config/
+!/.config/youtube-dl/
+!/.config/youtube-dl/config
 
 # Atom
 !/.atom/
