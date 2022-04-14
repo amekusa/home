@@ -9,12 +9,12 @@
 !/.zshrc
 
 !/.sh/
-!/.sh/env.sh
-!/.sh/fn.sh
-!/.sh/bin/
-!/.sh/bin/*.sh
+!/.sh/env
+!/.sh/fn
 !/.sh/lib/
-!/.sh/lib/*.sh
+!/.sh/lib/*
+!/.sh/scripts/
+!/.sh/scripts/*.sh
 
 !/.tmux.conf
 !/.hyper.js

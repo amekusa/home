@@ -2,7 +2,7 @@
 # ----------------- ---- -- -
 
 # environment variables
-. ~/.sh/env.sh
+. ~/.sh/env
 
 # command history
 export HISTFILE="$HOME/.zsh_history"

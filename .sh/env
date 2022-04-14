@@ -32,6 +32,7 @@ PATH="$HOME/.cargo/bin:$PATH"
 
 # custom executables
 PATH="$PATH:$HOME/.sh/bin"
+PATH="$PATH:$HOME/.sh/scripts"
 
 # export resulting path
 export PATH
