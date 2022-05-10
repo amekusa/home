@@ -12,23 +12,20 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_ANALYTICS=1
 PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH"
 
-# node (homebrew)
-# export NODE_PATH="$HOMEBREW_PREFIX/lib/node_modules"
-
 # python
-PATH="$HOME/Library/Python/3.9/bin:$PATH"
+PATH="$PATH:$HOME/Library/Python/3.9/bin"
 
 # composer
 export COMPOSER_HOME="$HOME/.composer"
-PATH="./vendor/bin:$COMPOSER_HOME/vendor/bin:$PATH"
+PATH="$PATH:./vendor/bin:$COMPOSER_HOME/vendor/bin"
 
 # node (n)
 export N_PREFIX="$HOME/.n"
 export NODE_PATH="$N_PREFIX/lib/node_modules"
-PATH="./node_modules/.bin:$N_PREFIX/bin:$PATH"
+PATH="$PATH:./node_modules/.bin:$N_PREFIX/bin"
 
 # rust
-PATH="$HOME/.cargo/bin:$PATH"
+PATH="$PATH:$HOME/.cargo/bin"
 
 # custom executables
 PATH="$PATH:$HOME/.sh/bin"
