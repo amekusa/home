@@ -33,3 +33,7 @@
 
 '.platform-darwin':
   'cmd-alt-s': 'tree-view:toggle'
+
+'atom-text-editor':
+  'ctrl-alt-g': 'inline-git-diff:toggle'
+  'ctrl-alt-r': 'inline-git-diff:revert'

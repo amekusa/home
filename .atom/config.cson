@@ -21,6 +21,9 @@
       "spell-check"
       "github"
     ]
+    packagesWithKeymapsDisabled: [
+      "inline-git-diff"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
