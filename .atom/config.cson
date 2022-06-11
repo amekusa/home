@@ -34,6 +34,9 @@
     simple_mode: true
   editor:
     fontFamily: "Fira Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    invisibles:
+      eol: false
+      space: false
     preferredLineLength: 120
     showIndentGuide: true
     showInvisibles: true
