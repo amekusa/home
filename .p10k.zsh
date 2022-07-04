@@ -29,6 +29,16 @@
   # Zsh >= 5.1 is required.
   autoload -Uz is-at-least && is-at-least 5.1 || return
 
+  # custom segment: tmux
+  function prompt_tmux() {
+    if [ -n "$TMUX" ]; then
+      p10k segment -f 76 -t 'tmux'
+    fi
+  }
+  function instant_prompt_tmux() {
+    prompt_tmux
+  }
+
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
@@ -37,6 +47,7 @@
     vcs                     # git status
     # =========================[ Line #2 ]=========================
     newline                 # \n
+    tmux
     prompt_char             # prompt symbol
   )
 
