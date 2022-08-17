@@ -21,6 +21,7 @@
       "spell-check"
       "github"
     ]
+    excludeVcsIgnoredPaths: false
     packagesWithKeymapsDisabled: [
       "inline-git-diff"
     ]
@@ -49,3 +50,6 @@
     enableMruTabSwitching: false
   welcome:
     showOnStartup: false
+".html.php.text":
+  editor:
+    autoIndent: false
