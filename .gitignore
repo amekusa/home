@@ -19,6 +19,7 @@
 !/.tmux.conf
 !/.hyper.js
 !/.p10k.zsh
+!/.editorconfig
 
 !/.config/
 !/.config/youtube-dl/
