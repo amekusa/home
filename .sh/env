@@ -35,5 +35,8 @@ PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$HOME/.sh/bin"
 PATH="$PATH:$HOME/.sh/scripts"
 
+# vscode
+PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # export resulting path
 export PATH
