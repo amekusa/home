@@ -9,6 +9,8 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": null,
 
+  "breadcrumbs.enabled": false,
+
   "editor.dragAndDrop": false,
   "editor.scrollBeyondLastLine": false,
   "editor.scrollbar.verticalScrollbarSize": 4,
