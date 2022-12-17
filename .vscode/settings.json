@@ -19,6 +19,8 @@
 
   "explorer.confirmDragAndDrop": false,
 
+  "git.showProgress": false,
+
   "markdown.marp.enableHtml": true,
   "markdown.marp.exportType": "html"
 }
