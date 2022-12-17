@@ -1,0 +1,24 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.enabled": false,
+
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": null,
+
+  "editor.dragAndDrop": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.scrollbar.verticalScrollbarSize": 4,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+
+  "files.trimTrailingWhitespace": true,
+
+  "explorer.confirmDragAndDrop": false,
+
+  "markdown.marp.enableHtml": true,
+  "markdown.marp.exportType": "html"
+}

@@ -31,3 +31,7 @@
 !/.atom/keymap.cson
 !/.atom/snippets.cson
 !/.atom/styles.less
+
+# VSCode
+!/.vscode/
+!/.vscode/settings.json
