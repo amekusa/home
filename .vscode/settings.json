@@ -20,9 +20,12 @@
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
   "editor.autoIndent": "advanced",
+  "editor.folding": false,
+  "editor.bracketPairColorization.enabled": false,
 
   "files.trimTrailingWhitespace": true,
 
+  "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
 
   "git.showProgress": false,
