@@ -10,4 +10,12 @@ if [ -d "$dir" ]; then
 	echo -e "[${GRN}SUCCESS${RST}] Symlinked VSCode settings.json"
 fi
 
+list=(
+	"Holllo.love"
+)
+for each in "${list[@]}"; do
+	code --install-extension "$each" &&
+	echo -e "[${GRN}SUCCESS${RST}] Installed VSCode extension '$each'"
+done;
+
 echo -e "${GRN}Done.${RST}"
