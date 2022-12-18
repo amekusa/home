@@ -6,10 +6,12 @@
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
   "workbench.editor.decorations.badges": false,
+  "workbench.editor.showIcons": false,
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": null,
   "workbench.colorTheme": "Love Dark",
+  "workbench.colorTheme": "Kanagawa",
 
   "breadcrumbs.enabled": false,
 
