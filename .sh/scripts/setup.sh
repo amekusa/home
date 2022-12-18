@@ -12,6 +12,11 @@ fi
 
 list=(
 	"Holllo.love"
+	"qufiwefefwoyn.kanagawa"
+	"jdinhlife.gruvbox"
+
+	"EditorConfig.EditorConfig"
+	"marp-team.marp-vscode"
 )
 for each in "${list[@]}"; do
 	code --install-extension "$each" &&
