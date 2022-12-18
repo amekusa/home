@@ -18,6 +18,7 @@
   "editor.scrollbar.horizontalScrollbarSize": 4,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
+  "editor.autoIndent": "none",
 
   "files.trimTrailingWhitespace": true,
 
