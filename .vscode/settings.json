@@ -3,6 +3,7 @@
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.enabled": false,
 
+  "workbench.colorTheme": "Loved",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
   "workbench.editor.decorations.badges": false,
@@ -10,8 +11,6 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": null,
-  "workbench.colorTheme": "Love Dark",
-  "workbench.colorTheme": "Kanagawa",
 
   "breadcrumbs.enabled": false,
 
@@ -31,6 +30,12 @@
   "explorer.confirmDragAndDrop": false,
 
   "git.showProgress": false,
+
+  "scm.diffDecorationsIgnoreTrimWhitespace": "true",
+  "scm.diffDecorationsGutterWidth": 1,
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
 
   "markdown.marp.enableHtml": true,
   "markdown.marp.exportType": "html"
