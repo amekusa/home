@@ -24,6 +24,7 @@
   "editor.autoIndent": "advanced",
   "editor.folding": false,
   "editor.bracketPairColorization.enabled": false,
+  "editor.lightbulb.enabled": false,
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
 
