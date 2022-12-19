@@ -11,6 +11,7 @@ if [ -d "$dir" ]; then
 fi
 
 list=(
+	"paulvandermeijs.loved"
 	"Holllo.love"
 	"qufiwefefwoyn.kanagawa"
 	"jdinhlife.gruvbox"
