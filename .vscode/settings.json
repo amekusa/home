@@ -50,6 +50,8 @@
     "added": true
   },
 
+  "javascript.suggest.autoImports": false,
+
   "markdown.marp.enableHtml": true,
   "markdown.marp.exportType": "html"
 }
