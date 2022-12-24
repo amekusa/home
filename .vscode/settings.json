@@ -14,6 +14,10 @@
 
   "breadcrumbs.enabled": false,
 
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Fira Code', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+
   "editor.dragAndDrop": false,
   "editor.autoIndent": "advanced",
   "editor.renderWhitespace": "boundary",
@@ -25,9 +29,6 @@
   "editor.folding": false,
   "editor.overviewRulerBorder": false,
   "editor.lightbulb.enabled": false,
-
-  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
 
   "editor.acceptSuggestionOnEnter": "off",
   "editor.suggestOnTriggerCharacters": false,
