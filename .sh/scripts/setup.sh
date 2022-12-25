@@ -8,6 +8,11 @@ if [ -d "$dir" ]; then
 	[ -f "$dir/$file" ] && rm "$dir/$file"
 	ln -s "$HOME/.vscode/$file" "$dir/$file" &&
 	echo -e "[${GRN}SUCCESS${RST}] Symlinked VSCode settings.json"
+
+	file="snippets"
+	[ -d "$dir/$file" ] && rm -rf "$dir/$file"
+	ln -s "$HOME/.vscode/$file" "$dir/$file" &&
+	echo -e "[${GRN}SUCCESS${RST}] Symlinked VSCode snippets"
 fi
 
 list=(
