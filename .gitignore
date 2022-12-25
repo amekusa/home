@@ -35,3 +35,5 @@
 # VSCode
 !/.vscode/
 !/.vscode/settings.json
+!/.vscode/snippets/
+!/.vscode/snippets/*.json
