@@ -32,6 +32,8 @@
 
   "editor.acceptSuggestionOnEnter": "off",
   "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": false,
+  "editor.parameterHints.enabled": false,
   "editor.quickSuggestions": {
     "other": "inline"
   },
