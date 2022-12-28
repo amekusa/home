@@ -53,6 +53,8 @@
     "added": true
   },
 
+  "extensions.ignoreRecommendations": true,
+
   "javascript.suggest.autoImports": false,
 
   "markdown.marp.enableHtml": true,
