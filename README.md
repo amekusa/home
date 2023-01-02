@@ -1,20 +1,12 @@
-# Home Directory
+# Home Directory on macOS
 
-## Getting started
-Initialize your home directory as a git repository.
+## Installation
 
 ```sh
 cd ~
 git init
 git remote add origin git@github.com:amekusa/home.git
 git pull origin master
-```
-
-Then, run `.update.sh` to install all the prerequisites.
-
-```sh
-chmod u+x .update.sh
-./.update.sh
 ```
 
 ---
