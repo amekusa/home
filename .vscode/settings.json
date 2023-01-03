@@ -23,7 +23,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.bracketPairColorization.enabled": false,
   "editor.scrollBeyondLastLine": false,
-  "editor.scrollbar.verticalScrollbarSize": 4,
+  "editor.scrollbar.verticalScrollbarSize": 8,
   "editor.scrollbar.horizontalScrollbarSize": 4,
   "editor.minimap.enabled": false,
   "editor.folding": false,
@@ -35,7 +35,7 @@
   "editor.wordBasedSuggestions": false,
   "editor.parameterHints.enabled": false,
   "editor.quickSuggestions": {
-    "other": "inline"
+    "other": "off"
   },
 
   "files.trimTrailingWhitespace": true,
