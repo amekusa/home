@@ -23,6 +23,7 @@ list=(
 
 	"EditorConfig.EditorConfig"
 	"marp-team.marp-vscode"
+	"alefragnani.Bookmarks"
 )
 for each in "${list[@]}"; do
 	code --install-extension "$each" &&
