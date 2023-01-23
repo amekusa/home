@@ -9,6 +9,7 @@
 !/.zshrc
 
 !/.sh/
+!/.sh/shlib
 !/.sh/env
 !/.sh/fn
 !/.sh/lib/
