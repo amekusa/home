@@ -10,7 +10,7 @@
 
 !/.sh/
 !/.sh/shlib
-!/.sh/env
+!/.sh/env.sh
 !/.sh/fn.sh
 !/.sh/lib/
 !/.sh/lib/*
