@@ -1,5 +1,5 @@
 #  zsh setup
-# ----------- ---- -- -
+# ----------- *
 
 # uncomment to analyze the zsh startup time
 # zmodload zsh/zprof
@@ -18,8 +18,8 @@ bindkey "^[3;5~" delete-char
 
 # cd hook (ls after cd)
 chpwd() {
-  emulate -L zsh
-  ls
+	emulate -L zsh
+	ls
 }
 
 # z
@@ -41,7 +41,7 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 # initialize the completion system
 autoload -Uz compinit
 if [ ! -f ~/.zcompdump ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
-  compinit && touch ~/.zcompdump
+	compinit && touch ~/.zcompdump
 else
-  compinit -C
+	compinit -C
 fi

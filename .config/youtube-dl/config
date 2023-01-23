@@ -1,5 +1,5 @@
 #  youtube-dl options
-# -------------------- ---- -- -
+# -------------------- *
 
 # format selection (ffmpeg required)
 -f "bestvideo[ext!=webm][height<=720]+bestaudio[ext!=webm]/bestvideo+bestaudio/best"

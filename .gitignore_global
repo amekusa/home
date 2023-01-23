@@ -2,7 +2,7 @@
 #
 #  To install:
 #  $ git config --global core.excludesfile ~/.gitignore_global
-# ------------------------------------------------------------- ---- -- -
+# ------------------------------------------------------------- *
 
 # temporary files
 *.log

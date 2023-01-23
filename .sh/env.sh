@@ -1,5 +1,5 @@
 #  shell environment variables
-# ----------------------------- ---- -- -
+# ----------------------------- *
 
 # default editor
 export EDITOR=nano
