@@ -1,6 +1,6 @@
 #!/bin/bash
 BASE="$HOME/.sh"
-. "$BASE/lib/styles"
+. "$BASE/shlib/format.sh"
 
 dir="$HOME/Library/Application Support/Code/User"
 if [ -d "$dir" ]; then

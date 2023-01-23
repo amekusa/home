@@ -1,6 +1,6 @@
 #!/bin/bash
 BASE="$HOME/.sh"
-. "$BASE/lib/styles"
+. "$BASE/shlib/format.sh"
 
 WAIT=45
 
