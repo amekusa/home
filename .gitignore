@@ -1,7 +1,8 @@
 *
+!.gitignore
+!/.gitmodules
+
 !/README.md
-!/.gitignore
-!/.gitignore_global
 
 !/.bash_profile
 !/.zprofile
@@ -17,6 +18,7 @@
 !/.sh/scripts/
 !/.sh/scripts/*.sh
 
+!/.gitignore_global
 !/.tmux.conf
 !/.hyper.js
 !/.p10k.zsh
