@@ -16,6 +16,18 @@
     "prefix": "for",
     "body": "for (let i = 0; i < $1; i++) {$0}"
   },
+  "for (let item of ...": {
+    "prefix": "for",
+    "body": "for (let ${1:item} of ${2:arr}) {$0}"
+  },
+  "for (let key in ...": {
+    "prefix": "for",
+    "body": "for (let ${1:key} in ${2:obj}) {$0}"
+  },
+  ".forEach": {
+    "prefix": ".for",
+    "body": ".forEach(${1:item} => {$0});"
+  },
   "const X = require('Y')": {
     "prefix": "req",
     "body": "const $1 = require('$0');"
