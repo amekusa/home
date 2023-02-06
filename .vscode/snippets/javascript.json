@@ -14,8 +14,30 @@
 	// }
   "for (let i …": {
     "prefix": "for",
-    "body": [
-      "for (let i = 0; i < $1; i++) {$2}"
-    ]
+    "body": "for (let i = 0; i < $1; i++) {$0}"
+  },
+  "const X = require('Y')": {
+    "prefix": "req",
+    "body": "const $1 = require('$0');"
+  },
+  "import X from 'Y'": {
+    "prefix": "imp",
+    "body": "import $1 from '$0';"
+  },
+  "console.log": {
+    "prefix": "con",
+    "body": "console.log($1)$0"
+  },
+  "console.debug": {
+    "prefix": "con",
+    "body": "console.debug($1)$0"
+  },
+  "@param": {
+    "prefix": "@pa",
+    "body": "@param {$1} $0"
+  },
+  "@return": {
+    "prefix": "@re",
+    "body": "@return {$0}"
   }
 }
