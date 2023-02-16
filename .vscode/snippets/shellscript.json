@@ -31,7 +31,7 @@
   "for (args)": {
     "prefix": "for ",
     "body": [
-      "for ${1:each} in \"$@\"; do",
+      "for ${1:arg} in \"$@\"; do",
       "\t$0",
       "done"
     ]
@@ -44,6 +44,31 @@
       "\t$0",
       "\t;;",
       "esac"
+    ]
+  },
+  "heredoc": {
+    "prefix": ["heredoc", "cat "],
+    "body": [
+      "cat <<-EOF",
+      "$0",
+      "EOF"
+    ]
+  },
+  "prompt (Y/N)": {
+    "prefix": ["prompt", "confirm"],
+    "body": [
+      "while true; do",
+      "\tread -n 1 -p \"${1:msg}? (Y/N) \" ${2:answer}; echo",
+      "\tcase \"$${2:answer}\" in",
+      "\t[Yy])",
+      "\t\t$3",
+      "\t\t;;",
+      "\t[Nn])",
+      "\t\t$4",
+      "\t\t;;",
+      "\t*) echo \"Please answer yes or no.\" ;;",
+      "\tesac",
+      "done"
     ]
   }
 }
