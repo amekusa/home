@@ -20,6 +20,14 @@
       "fi"
     ]
   },
+  "while": {
+    "prefix": "while ",
+    "body": [
+      "while ${1:true}; do",
+      "\t$0",
+      "done"
+    ]
+  },
   "for (array)": {
     "prefix": "for ",
     "body": [
@@ -37,7 +45,7 @@
     ]
   },
   "case": {
-    "prefix": "case",
+    "prefix": ["case", "switch"],
     "body": [
       "case \"$${1:var}\" in",
       "${2:x})",
@@ -49,7 +57,7 @@
   "heredoc": {
     "prefix": ["heredoc", "cat "],
     "body": [
-      "cat <<-EOF",
+      "cat <<- EOF",
       "$0",
       "EOF"
     ]
