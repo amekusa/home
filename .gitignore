@@ -11,8 +11,8 @@
 
 !/.sh/
 !/.sh/shlib
-!/.sh/env.sh
-!/.sh/fn.sh
+!/.sh/*.conf
+!/.sh/*.sh
 !/.sh/lib/
 !/.sh/lib/*
 !/.sh/scripts/
