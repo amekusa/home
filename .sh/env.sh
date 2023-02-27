@@ -1,11 +1,15 @@
 #  shell environment variables
 # ----------------------------- *
 
-
-# save/restore the system default PATH
-if [ -z "$DEFAULT_PATH" ];
-	then export DEFAULT_PATH="$PATH"
-	else PATH="$DEFAULT_PATH"
+# save/restore the system default PATH & FPATH
+if [ -z "$_FIRST_LOGIN" ]; then
+	export _FIRST_LOGIN=true
+	export _DEF_PATH="$PATH"
+	export _DEF_FPATH="$FPATH"
+else
+	_FIRST_LOGIN=false
+	PATH="$_DEF_PATH"
+	FPATH="$_DEF_FPATH"
 fi
 
 # configuration
@@ -70,5 +74,6 @@ if "$_NIX" && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]
   export NIX_PATH="$HOME/.nix-defexpr"
 fi
 
-# export resulting path
+# done
 export PATH
+export FPATH
