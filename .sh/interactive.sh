@@ -1,4 +1,4 @@
-#  shell functions and aliases
+#  utils for interactive shell
 # ----------------------------- *
 
 . "$HOME/.sh/shlib/interactive.sh"
