@@ -1,6 +1,13 @@
 #  shell environment variables
 # ----------------------------- *
 
+
+# save/restore the system default PATH
+if [ -z "$DEFAULT_PATH" ];
+	then export DEFAULT_PATH="$PATH"
+	else PATH="$DEFAULT_PATH"
+fi
+
 # configuration
 [ -f "$HOME/.sh/env.local" ] || cp "$HOME/.sh/env.conf" "$HOME/.sh/env.local"
 . "$HOME/.sh/env.conf"
