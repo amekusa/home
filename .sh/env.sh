@@ -65,9 +65,6 @@ PATH="$PATH:$GOPATH/bin"
 PATH="$PATH:$HOME/.sh/bin"
 PATH="$PATH:$HOME/.sh/scripts"
 
-# vscode
-PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
 # nix
 if "$_NIX" && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
   . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"

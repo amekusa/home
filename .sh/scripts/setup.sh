@@ -3,7 +3,9 @@ BASE="$HOME/.sh"
 . "$BASE/shlib/io.sh"
 . "$BASE/shlib/format.sh"
 
-dir="$HOME/Library/Application Support/Code/User"
+# ---- vscodium ----
+
+dir="$HOME/Library/Application Support/VSCodium/User"
 if [ -d "$dir" ]; then
 	files=(
 		"settings.json"
@@ -17,6 +19,7 @@ if [ -d "$dir" ]; then
 	done
 fi
 
+exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
 list=(
 	"paulvandermeijs.loved"
 	"Holllo.love"
@@ -28,7 +31,7 @@ list=(
 	"alefragnani.Bookmarks"
 )
 for each in "${list[@]}"; do
-	code --install-extension "$each" &&
+	"$exe" --install-extension "$each" &&
 	echo -e "[${GRN}SUCCESS${RST}] Installed VSCode extension '$each'"
 done;
 

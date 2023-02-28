@@ -31,6 +31,9 @@ alias nbuild='npm run build'
 alias ntest='npm run test'
 alias nwatch='npm run watch'
 
+# VSCodium
+alias code='/Applications/VSCodium.app/Contents/Resources/app/bin/codium'
+
 # start/stop server
 alias start-server='brew services run mariadb; php-fpm -D; sudo nginx'
 alias stop-server='brew services stop mariadb; killall php-fpm; sudo nginx -s stop'
