@@ -3,7 +3,7 @@
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.enabled": false,
 
-  "workbench.colorTheme": "Loved",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
   "workbench.editor.decorations.badges": false,
@@ -30,6 +30,7 @@
   "editor.overviewRulerBorder": false,
   "editor.lightbulb.enabled": false,
 
+  "editor.suggest.preview": true,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.suggestOnTriggerCharacters": false,
   "editor.wordBasedSuggestions": false,
@@ -46,6 +47,7 @@
   "explorer.confirmDragAndDrop": false,
 
   "git.showProgress": false,
+  "git.openRepositoryInParentFolders": "never",
 
   "scm.diffDecorationsIgnoreTrimWhitespace": "true",
   "scm.diffDecorationsGutterWidth": 1,
