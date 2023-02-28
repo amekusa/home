@@ -47,7 +47,7 @@
   "explorer.confirmDragAndDrop": false,
 
   "git.showProgress": false,
-  "git.openRepositoryInParentFolders": "never",
+  "git.openRepositoryInParentFolders": "always",
 
   "scm.diffDecorationsIgnoreTrimWhitespace": "true",
   "scm.diffDecorationsGutterWidth": 1,
