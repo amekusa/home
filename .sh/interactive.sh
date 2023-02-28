@@ -7,6 +7,7 @@
 # ---- aliases ----
 
 # cd
+alias cd='scd'
 alias ..='cd ..'
 alias ...='cd ../../'
 
