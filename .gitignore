@@ -38,5 +38,6 @@
 # VSCode
 !/.vscode/
 !/.vscode/settings.json
+!/.vscode/keybindings.json
 !/.vscode/snippets/
 !/.vscode/snippets/*.json
