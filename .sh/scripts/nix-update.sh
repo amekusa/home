@@ -22,11 +22,11 @@ file="$dir/default.nix"
 data="import (fetchTarball \"https://github.com/NixOS/nixpkgs/archive/${rev}.tar.gz\")"
 
 [ -d "$dir" ] || mkdir -p "$dir"
-if [ -r "$file" ] && diff -q "$file" - <<< "$data" > /dev/null; then
+if [ -r "$file" ] && [[ "$(cat "$file")" = "$data"* ]]; then
   echo "nixpkgs already up to date"
   exit
 fi
-if ! echo "$data" > $file; then
+if ! echo "$data # update: $(date +%F)" > $file; then
 	_error "failed to write: $file"; exit 1
 fi
 _success "default nixpkgs has been updated"
