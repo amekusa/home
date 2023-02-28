@@ -22,7 +22,7 @@ export EDITOR=nano
 export VISUAL=$EDITOR
 
 # homebrew
-if "$_HOMEBREW"; then
+if [ "$_HOMEBREW" = 1 ]; then
 	export HOMEBREW_PREFIX="$HOME/.brew"
 	export HOMEBREW_TEMP="$HOMEBREW_PREFIX/.tmp"
 	export HOMEBREW_NO_AUTO_UPDATE=1
@@ -30,7 +30,7 @@ if "$_HOMEBREW"; then
 	PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH"
 
 	# llvm
-	if "$_HOMEBREW_LLVM"; then
+	if [ "$_HOMEBREW_LLVM" = 1 ]; then
 		PATH="$HOMEBREW_PREFIX/opt/llvm/bin:$PATH"
 		export LDFLAGS="-L$HOMEBREW_PREFIX/opt/llvm/lib"
 		export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/llvm/include"
@@ -48,7 +48,7 @@ PATH="$PATH:./vendor/bin:$COMPOSER_HOME/vendor/bin"
 PATH="$PATH:./node_modules/.bin"
 
 # n (node version manager)
-if "$_N"; then
+if [ "$_N" = 1 ]; then
 	export N_PREFIX="$HOME/.n"
 	export NODE_PATH="$N_PREFIX/lib/node_modules"
 	PATH="$PATH:$N_PREFIX/bin"
@@ -66,7 +66,7 @@ PATH="$PATH:$HOME/.sh/bin"
 PATH="$PATH:$HOME/.sh/scripts"
 
 # nix
-if "$_NIX" && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
+if [ "$_NIX" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
   . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
   export NIX_PATH="$HOME/.nix-defexpr"
 fi
