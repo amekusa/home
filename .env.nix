@@ -12,6 +12,11 @@ git
 lazygit
 tig
 
+php
+php81Packages.composer
+
+nodejs
+
 # To install:
 #   nix-env -irf .env.nix
 
