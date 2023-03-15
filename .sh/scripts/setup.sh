@@ -5,6 +5,7 @@ BASE="$HOME/.sh"
 
 # ---- vscodium ----
 
+exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
 dir="$HOME/Library/Application Support/VSCodium/User"
 if [ -d "$dir" ]; then
 	files=(
@@ -19,18 +20,21 @@ if [ -d "$dir" ]; then
 	done
 fi
 
-exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
-list=(
+extensions=(
+	# themes
 	"paulvandermeijs.loved"
 	"Holllo.love"
 	"qufiwefefwoyn.kanagawa"
 	"jdinhlife.gruvbox"
 
+	# utils
 	"EditorConfig.EditorConfig"
 	"marp-team.marp-vscode"
 	"alefragnani.Bookmarks"
+	"huntertran.auto-markdown-toc"
+	"wwm.better-align"
 )
-for each in "${list[@]}"; do
+for each in "${extensions[@]}"; do
 	"$exe" --install-extension "$each" &&
 	echo -e "[${GRN}SUCCESS${RST}] Installed VSCode extension '$each'"
 done;
