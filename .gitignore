@@ -43,6 +43,7 @@
 !/.vscode/snippets/*.json
 
 # Nixpkgs
+!/.env.nix
 !/.nix-defexpr/
 !/.nix-defexpr/nixpkgs/
 !/.nix-defexpr/nixpkgs/default.nix
