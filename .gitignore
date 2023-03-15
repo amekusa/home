@@ -41,3 +41,8 @@
 !/.vscode/keybindings.json
 !/.vscode/snippets/
 !/.vscode/snippets/*.json
+
+# Nixpkgs
+!/.nix-defexpr/
+!/.nix-defexpr/nixpkgs/
+!/.nix-defexpr/nixpkgs/default.nix
