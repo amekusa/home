@@ -10,7 +10,7 @@ DESC_EXT=".desc.txt"
 OPTS="--ignore-config"
 # ================
 
-ytdl=$(which youtube-dl) || _err "youtube-dl required"
+ytdl=$(which youtube-dl) || _die "youtube-dl required"
 
 title="$($ytdl $OPTS -s --get-title $@)"
 desc="$title$LF$LF$($ytdl $OPTS -s --get-description $@)"
