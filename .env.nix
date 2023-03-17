@@ -2,20 +2,22 @@ with import <nixpkgs> {}; [
 
 bash
 zsh
+coreutils
+openssh
 jq
+
 tmux
 nano
 micro
 
-openssh
 git
-lazygit
 tig
+lazygit
+
+nodejs
 
 php
 php81Packages.composer
-
-nodejs
 
 # To install:
 #   nix-env -irf .env.nix
