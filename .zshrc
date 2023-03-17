@@ -40,8 +40,7 @@ ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # initialize the completion system
 autoload -Uz compinit
-if [ ! -f ~/.zcompdump ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
-	compinit && touch ~/.zcompdump
-else
-	compinit -C
+if [ ! -f ~/.zcompdump ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ] # compinit only once a day
+	then compinit && touch ~/.zcompdump
+	else compinit -C
 fi
