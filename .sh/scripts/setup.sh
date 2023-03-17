@@ -1,4 +1,16 @@
 #!/bin/bash
+#
+#  My setup script for macOS
+# --------------------------- -
+#  @author Satoshi Soma (github.com/amekusa)
+#
+#  Usage:
+#    setup.sh
+#    setup.sh --list
+#    setup.sh --force <TASK_NAME>
+#
+# =========================================== *
+
 BASE="$HOME/.sh"
 . "$BASE/shlib/util.sh"
 . "$BASE/shlib/io.sh"
