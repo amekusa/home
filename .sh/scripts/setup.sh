@@ -7,18 +7,28 @@ BASE="$HOME/.sh"
 
 task-system --save-to "$BASE/.setup.tasks" "$@"
 
+
+# ---- nix ----
+if task NIX; then
+	_has-cmd nix || fail "nix not found"
+	nix-env -irf "$HOME/.env.nix"
+ksat; fi
+
+
 # ---- npm ----
-if task NPM && _has-cmd npm; then
-	npm config set prefix "$NPM_PREFIX"
+if task NPM; then
+	_has-cmd npm || fail "npm not found"
+	npm config set prefix "$(_dir "$NPM_PREFIX")"
 	pkgs=(
 		"npm-check-updates"
+		"npm-watch"
 		"c8"
 		"mocha"
 		"gulp"
 		"jsdoc@3.6.11"
 	)
 	for each in "${pkgs[@]}"; do
-		npm install -g "$each"
+		npm ls -g "$each" || npm install -g "$each"
 	done
 ksat; fi
 
