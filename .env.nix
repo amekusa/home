@@ -2,7 +2,6 @@ with import <nixpkgs> {}; [
 
 bash
 zsh
-coreutils
 openssh
 jq
 
