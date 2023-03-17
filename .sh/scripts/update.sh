@@ -9,7 +9,6 @@ REPOS=(
 	https://github.com/zsh-users/zsh-completions
 	https://github.com/agkozak/zsh-z
 	https://github.com/romkatv/powerlevel10k
-	https://github.com/tj/n
 )
 
 [ -d "$REPOS_DIR" ] || mkdir -p "$REPOS_DIR"
@@ -38,9 +37,4 @@ done
 
 echo
 echo "All the repositories have been updated."
-echo
-
-echo "Installing n..."
-cd "$REPOS_DIR/n" && PREFIX="$N_PREFIX" make install
-echo "Done."
 echo

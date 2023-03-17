@@ -21,6 +21,12 @@ fi
 export EDITOR=nano
 export VISUAL=$EDITOR
 
+# nix
+if [ "$_NIX" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
+  . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
+  export NIX_PATH="$HOME/.nix-defexpr"
+fi
+
 # homebrew
 if [ "$_HOMEBREW" = 1 ]; then
 	export HOMEBREW_PREFIX="$HOME/.brew"
@@ -40,19 +46,13 @@ fi
 # python
 PATH="$PATH:$HOME/Library/Python/3.9/bin"
 
+# node
+export NPM_PREFIX="$HOME/.npm-global"
+PATH="$PATH:./node_modules/.bin:$NPM_PREFIX/bin"
+
 # composer
 export COMPOSER_HOME="$HOME/.composer"
 PATH="$PATH:./vendor/bin:$COMPOSER_HOME/vendor/bin"
-
-# node
-PATH="$PATH:./node_modules/.bin"
-
-# n (node version manager)
-if [ "$_N" = 1 ]; then
-	export N_PREFIX="$HOME/.n"
-	export NODE_PATH="$N_PREFIX/lib/node_modules"
-	PATH="$PATH:$N_PREFIX/bin"
-fi
 
 # rust
 PATH="$PATH:$HOME/.cargo/bin"
@@ -64,12 +64,6 @@ PATH="$PATH:$GOPATH/bin"
 # custom executables
 PATH="$PATH:$HOME/.sh/bin"
 PATH="$PATH:$HOME/.sh/scripts"
-
-# nix
-if [ "$_NIX" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
-  . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
-  export NIX_PATH="$HOME/.nix-defexpr"
-fi
 
 # done
 export PATH
