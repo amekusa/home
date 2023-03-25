@@ -1,9 +1,13 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "alt+cmd+k",
-        "command": "-bookmarks.toggle",
-        "when": "editorTextFocus"
+        "key":     "ctrl+`",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key":     "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when":    "terminalFocus"
     },
     {
         "key": "alt+cmd+k",
@@ -24,5 +28,9 @@
         "key": "alt+cmd+up",
         "command": "-editor.action.insertCursorAbove",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "bookmarks.toggle"
     }
 ]
