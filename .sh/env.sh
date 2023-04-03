@@ -22,7 +22,7 @@ export EDITOR=nano
 export VISUAL=$EDITOR
 
 # homebrew
-if [ "$_HOMEBREW" = 1 ]; then
+if [ "$env_brew" = 1 ]; then
 	export HOMEBREW_PREFIX="$HOME/.brew"
 	export HOMEBREW_TEMP="$HOMEBREW_PREFIX/.tmp"
 	export HOMEBREW_NO_AUTO_UPDATE=1
@@ -30,15 +30,15 @@ if [ "$_HOMEBREW" = 1 ]; then
 	PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH"
 
 	# llvm
-	if [ "$_HOMEBREW_LLVM" = 1 ]; then
-		PATH="$HOMEBREW_PREFIX/opt/llvm/bin:$PATH"
-		export LDFLAGS="-L$HOMEBREW_PREFIX/opt/llvm/lib"
-		export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/llvm/include"
+	if [ "$env_brew_llvm" = 1 ]; then
+		PATH="$HOMEBREW_PREFIX/opt/llvm$env_brew_llvm_ver/bin:$PATH"
+		export LDFLAGS="-L$HOMEBREW_PREFIX/opt/llvm$env_brew_llvm_ver/lib"
+		export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/llvm$env_brew_llvm_ver/include"
 	fi
 fi
 
 # nix
-if [ "$_NIX" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
+if [ "$env_nix" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
   . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
   export NIX_PATH="$HOME/.nix-defexpr"
 fi
