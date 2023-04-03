@@ -21,12 +21,6 @@ fi
 export EDITOR=nano
 export VISUAL=$EDITOR
 
-# nix
-if [ "$_NIX" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
-  . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
-  export NIX_PATH="$HOME/.nix-defexpr"
-fi
-
 # homebrew
 if [ "$_HOMEBREW" = 1 ]; then
 	export HOMEBREW_PREFIX="$HOME/.brew"
@@ -41,6 +35,12 @@ if [ "$_HOMEBREW" = 1 ]; then
 		export LDFLAGS="-L$HOMEBREW_PREFIX/opt/llvm/lib"
 		export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/llvm/include"
 	fi
+fi
+
+# nix
+if [ "$_NIX" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
+  . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
+  export NIX_PATH="$HOME/.nix-defexpr"
 fi
 
 # python
