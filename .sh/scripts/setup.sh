@@ -27,6 +27,20 @@ if task NIX; then
 ksat; fi
 
 
+# ---- brew ----
+if task BREW; then
+	_has-cmd brew || fail "brew not found"
+	pkgs=(
+		cmake
+		ninja
+		llvm@14
+	)
+	for each in "${pkgs[@]}"; do
+		_q brew list "$each" || brew install "$each"
+	done
+ksat; fi
+
+
 # ---- npm ----
 if task NPM; then
 	_has-cmd npm || fail "npm not found"
