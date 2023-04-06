@@ -4,8 +4,6 @@
 
 let plugins = [
   'hyperterm-summon',
-  'hyper-opacity',
-
   [ // themes
     'hyper-one-dark',
     'hyper-subliminal-theme',
@@ -21,11 +19,6 @@ module.exports = {
       hideDock: false,
       hideOnBlur: false,
       hotkey: 'Control+;',
-    },
-    // hyper-opacity
-    opacity: {
-      focus: .9,
-      blur:  .8
     },
 
     // select with alt+drag on Mac
