@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 #  Updates the default nixpkgs revision
 # -------------------------------------- -

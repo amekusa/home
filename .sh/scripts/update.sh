@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 BASE="$HOME/.sh"
 . "$BASE/shlib/format.sh"
 
