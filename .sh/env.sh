@@ -61,6 +61,11 @@ PATH="$PATH:$HOME/.cargo/bin"
 export GOPATH="$HOME/.go"
 PATH="$PATH:$GOPATH/bin"
 
+# ruby
+export GEM_HOME="$HOME/.gem"
+export GEM_PATH="$GEM_HOME"
+PATH="$PATH:$GEM_HOME/bin"
+
 # custom executables
 PATH="$PATH:$HOME/.sh/bin"
 PATH="$PATH:$HOME/.sh/scripts"
