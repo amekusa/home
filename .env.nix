@@ -17,6 +17,8 @@ nodejs
 
 php
 php81Packages.composer
+go
+ruby
 
 # To install:
 #   nix-env -irf .env.nix
