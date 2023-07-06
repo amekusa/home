@@ -15,7 +15,6 @@ lazygit
 
 nmap
 arp-scan
-hwatch
 
 nodejs
 php
