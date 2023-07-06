@@ -13,8 +13,11 @@ git
 tig
 lazygit
 
-nodejs
+nmap
+arp-scan
+hwatch
 
+nodejs
 php
 php81Packages.composer
 go
