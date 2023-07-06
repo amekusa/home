@@ -21,7 +21,7 @@ task-system --save-to "$BASE/.setup.tasks" "$@"
 
 
 # ---- nix ----
-if task NIX; then
+if task NIX -r; then
 	_has-cmd nix || fail "nix not found"
 	nix-env -irf "$HOME/.env.nix"
 ksat; fi
