@@ -76,5 +76,5 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.hovers.avatars": false,
-  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false
 }
