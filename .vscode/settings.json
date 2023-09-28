@@ -42,9 +42,13 @@
   "files.trimTrailingWhitespace": true,
 
   "zenMode.hideTabs": false,
+  "zenMode.hideLineNumbers": false,
 
   "explorer.openEditors.visible": 0,
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+
+  "search.useIgnoreFiles": true,
 
   "git.showProgress": false,
   "git.openRepositoryInParentFolders": "always",
@@ -58,7 +62,19 @@
   "extensions.ignoreRecommendations": true,
 
   "javascript.suggest.autoImports": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
 
   "markdown.marp.enableHtml": true,
-  "markdown.marp.exportType": "html"
+  "markdown.marp.exportType": "html",
+
+  "license.extension": ".txt",
+
+  "alignment.surroundSpace": {
+    "colon": [-1, 1]
+  },
+
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.hovers.avatars": false,
+  "gitlens.hovers.currentLine.enabled": false,
 }
