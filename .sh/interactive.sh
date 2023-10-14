@@ -19,6 +19,9 @@ alias la='ls -hal'
 # run the previous command with sudo
 alias plz='sudo $(fc -ln -1)'
 
+# tmux
+alias tm='tmux'
+
 # lazygit
 alias lg='lazygit'
 
