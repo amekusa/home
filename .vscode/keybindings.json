@@ -10,6 +10,11 @@
         "when":    "terminalFocus"
     },
     {
+        "key": "cmd+k cmd+s",
+        "command": "git.stageSelectedRanges",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "alt+cmd+k",
         "command": "editor.action.insertCursorBelow",
         "when": "editorTextFocus"
