@@ -22,6 +22,12 @@
     "command": "workbench.action.togglePanel"
   },
 
+  // focus/cycle editor pane (cmd+;)
+  {
+    "key": "cmd+[Semicolon]",
+    "command": "workbench.action.focusNextGroup"
+  },
+
   // duplicate cursor above (alt+cmd+i)
   {
     "key": "alt+cmd+i",
