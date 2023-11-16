@@ -35,6 +35,7 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.wordBasedSuggestions": false,
   "editor.parameterHints.enabled": false,
+  "editor.find.autoFindInSelection": "multiline",
   "editor.quickSuggestions": {
     "other": "off"
   },
