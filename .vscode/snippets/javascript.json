@@ -36,13 +36,33 @@
     "prefix": "imp",
     "body": "import $1 from '$0';"
   },
+  "class X": {
+    "prefix": "cla",
+    "body": [
+      "class $1 {",
+      "\tconstructor($2) {",
+      "\t\t$0",
+      "\t}",
+      "}",
+      "",
+      "export default $1;"
+    ]
+  },
   "console.log": {
-    "prefix": "con",
+    "prefix": "log",
     "body": "console.log($1)$0"
   },
   "console.debug": {
-    "prefix": "con",
+    "prefix": "deb",
     "body": "console.debug($1)$0"
+  },
+  "console.error": {
+    "prefix": "err",
+    "body": "console.error($1)$0"
+  },
+  "console.warn": {
+    "prefix": "war",
+    "body": "console.warn($1)$0"
   },
   "@param": {
     "prefix": "@pa",
