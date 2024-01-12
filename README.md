@@ -12,6 +12,13 @@ git submodule update --init
 
 ---
 
+## NPM
+Change global install path to `~/.npm-global`
+```sh
+npm config set prefix "${HOME}/.npm-global"
+```
+
+
 ## Homebrew
 
 ```sh
