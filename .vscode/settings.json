@@ -7,7 +7,6 @@
 
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false,
   "workbench.editor.decorations.badges": false,
   "workbench.editor.showIcons": false,
   "workbench.editor.tabSizing": "shrink",
@@ -44,8 +43,6 @@
   },
 
   "files.trimTrailingWhitespace": true,
-
-  "zenMode.hideTabs": false,
   "zenMode.hideLineNumbers": false,
 
   "explorer.openEditors.visible": 0,
