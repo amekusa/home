@@ -30,11 +30,11 @@
   },
   "const X = require('Y')": {
     "prefix": "req",
-    "body": "const $1 = require('$0');"
+    "body": "const $1 = require('${0:./$1}');"
   },
   "import X from 'Y'": {
     "prefix": "imp",
-    "body": "import $1 from '$0';"
+    "body": "import $1 from '${0:./$1.js}';"
   },
   "class X": {
     "prefix": "cla",
