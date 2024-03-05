@@ -29,15 +29,15 @@
     "body": ".forEach(${1:item} => {$0});"
   },
   "const X = require('Y')": {
-    "prefix": "req",
+    "prefix": "require",
     "body": "const $1 = require('${0:./$1}');"
   },
   "import X from 'Y'": {
-    "prefix": "imp",
+    "prefix": "import",
     "body": "import $1 from '${0:./$1.js}';"
   },
   "class X": {
-    "prefix": "cla",
+    "prefix": "class",
     "body": [
       "class $1 {",
       "\tconstructor($2) {",
@@ -53,23 +53,37 @@
     "body": "console.log($1)$0"
   },
   "console.debug": {
-    "prefix": "deb",
+    "prefix": "debug",
     "body": "console.debug($1)$0"
   },
   "console.error": {
-    "prefix": "err",
+    "prefix": "error",
     "body": "console.error($1)$0"
   },
   "console.warn": {
-    "prefix": "war",
+    "prefix": "warn",
     "body": "console.warn($1)$0"
   },
+  "arrow function": {
+    "prefix": "fn",
+    "body": "${1:arg} => {$0}"
+  },
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "/**",
+      " * $1",
+      " * @param {${2:any}} ${3:name}",
+      " * @return {${4:any}} $5",
+      " */"
+    ]
+  },
   "@param": {
-    "prefix": "@pa",
+    "prefix": "param",
     "body": "@param {$1} $0"
   },
   "@return": {
-    "prefix": "@re",
+    "prefix": "return",
     "body": "@return {$0}"
   }
 }
