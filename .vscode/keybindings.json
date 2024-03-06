@@ -87,7 +87,7 @@
     "when": "editorTextFocus"
   },
 
-  // got to next change (cmd+j)
+  // go to next change (cmd+j)
   {
     "key": "cmd+j",
     "command": "workbench.action.editor.nextChange",
@@ -138,5 +138,35 @@
     "key": "shift+alt+f5",
     "command": "-workbench.action.compareEditor.previousChange",
     "when": "textCompareEditorVisible"
+  },
+
+  // filetree: create new file (cmd+n)
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "space",
+    "command": "explorer.openAndPassFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+
+  // filetree: open file and focus editor (space)
+  //           shift+space: open file and do not focus editor
+  {
+    "key": "cmd+down",
+    "command": "-explorer.openAndPassFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "shift+space",
+    "command": "filesExplorer.openFilePreserveFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "space",
+    "command": "-filesExplorer.openFilePreserveFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
   }
 ]
