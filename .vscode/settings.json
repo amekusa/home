@@ -40,7 +40,7 @@
   "editor.parameterHints.enabled": false,
   "editor.find.autoFindInSelection": "multiline",
   "editor.quickSuggestions": {
-    "other": "off"
+    "comments": "on"
   },
 
   "files.trimTrailingWhitespace": true,
