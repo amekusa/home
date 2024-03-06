@@ -26,6 +26,10 @@
 
 !/.config/
 
+# iTerm
+!/.config/iterm/
+!/.config/iterm/*
+
 # Atom
 !/.atom/
 !/.atom/config.cson
