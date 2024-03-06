@@ -11,11 +11,12 @@
   "workbench.editor.decorations.badges": false,
   "workbench.editor.showIcons": false,
   "workbench.editor.tabSizing": "shrink",
-  "workbench.editor.tabCloseButton": "off",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.iconTheme": null,
 
   "breadcrumbs.enabled": false,
+
+  "outline.collapseItems": "alwaysCollapse",
 
   "editor.fontSize": 14,
   "editor.fontFamily": "'Fira Code', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
