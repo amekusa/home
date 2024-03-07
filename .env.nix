@@ -8,6 +8,7 @@ jq
 tmux
 nano
 micro
+neovim
 
 git
 tig
