@@ -25,6 +25,10 @@ alias tm='tmux'
 # lazygit
 alias lg='lazygit'
 
+# neovim
+alias vi='nvim'
+alias vimdiff='nvim -d'
+
 # fix micro + tmux conflicts
 alias micro='TERM=xterm-256color micro'
 
