@@ -1,0 +1,43 @@
+import = [
+	'~/.config/alacritty/pencil-dark.theme.toml',
+]
+
+[cursor]
+
+[cursor.style]
+shape = 'Beam'  # Block / Underline / Beam
+blinking = 'Always'  # Never / Off / On / Always
+
+[mouse]
+hide_when_typing = true
+
+[font]
+size = 14.0
+builtin_box_drawing = true  # use built-in font for powerline symbols?
+
+[font.normal]
+family = 'Hack Nerd Font'
+
+[window]
+startup_mode = 'Windowed'
+dynamic_padding = true  # center the content?
+opacity = 1.0
+resize_increments = true
+
+[window.padding]
+x = 0
+y = 0
+
+[window.dimensions]
+columns = 128
+lines   = 64
+
+[scrolling]
+history = 10000
+multiplier = 3  # scrolling speed
+
+[keyboard]
+bindings = [
+	{key = 'Tab', mods = 'Control|Shift', action = 'SelectPreviousTab'},
+	{key = 'Tab', mods = 'Control',       action = 'SelectNextTab'},
+]

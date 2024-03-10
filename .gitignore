@@ -30,6 +30,10 @@
 !/.config/iterm/
 !/.config/iterm/*
 
+# Alacritty
+!/.config/alacritty/
+!/.config/alacritty/*
+
 # Atom
 !/.atom/
 !/.atom/config.cson
