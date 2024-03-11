@@ -10,7 +10,7 @@ base="$HOME/.sh"
 . "$base/shlib/format.sh"
 
 echo "Fetching the latest nixpkgs revision via Prometheus API..."
-url="https://monitoring.nixos.org/prometheus/api/v1/query?query=channel_revision"
+url="https://prometheus.nixos.org/api/v1/query?query=channel_revision"
 filter=".data.result[]|select(.metric.status == \"stable\" and .metric.variant == \"darwin\").metric.revision"
 if ! rev="$(curl --silent --show-error "$url" | jq -r "$filter")"; then
 	_error "failed to fetch the revision"; exit 1
