@@ -12,7 +12,10 @@ base="$HOME/.sh"
 echo "Fetching the latest nixpkgs revision via Prometheus API..."
 url="https://prometheus.nixos.org/api/v1/query?query=channel_revision"
 filter=".data.result[]|select(.metric.status == \"stable\" and .metric.variant == \"darwin\").metric.revision"
-if ! rev="$(curl --silent --show-error "$url" | jq -r "$filter")"; then
+fetched="$(curl --silent --show-error "$url")"
+if ! rev="$(echo "$fetched" | jq -r "$filter")"; then
+	echo "response:"
+	echo "$fetched"
 	_error "failed to fetch the revision"; exit 1
 fi
 _success "revision: ${MAG}$rev${RST}"
