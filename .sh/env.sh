@@ -18,7 +18,7 @@ fi
 . "$HOME/.sh/env.local"
 
 # default editor
-export EDITOR=nano
+export EDITOR=nvim
 export VISUAL=$EDITOR
 
 # homebrew
