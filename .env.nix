@@ -4,6 +4,7 @@ bash
 zsh
 openssh
 jq
+ripgrep
 
 tmux
 nano
