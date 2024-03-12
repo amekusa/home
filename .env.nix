@@ -7,6 +7,8 @@ jq
 ripgrep
 
 tmux
+nnn
+yazi
 nano
 micro
 neovim
