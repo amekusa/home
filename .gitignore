@@ -26,6 +26,10 @@
 
 !/.config/
 
+# Yazi
+!/.config/yazi/
+!/.config/yazi/*
+
 # iTerm
 !/.config/iterm/
 !/.config/iterm/*

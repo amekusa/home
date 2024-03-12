@@ -1,0 +1,19 @@
+[manager]
+# sort_by = 'none'
+# sort_by = 'modified'
+# sort_by = 'created'
+# sort_by = 'extension'
+sort_by = 'alphabetical'
+# sort_by = 'natural'
+# sort_by = 'size'
+
+sort_sensitive = false
+sort_reverse = false
+sort_dir_first = true
+show_hidden = true
+show_symlink = true # show the path of the symlink file point to, after the filename
+scrolloff = 24 # the number of files to keep above and below the cursor when moving through the file list
+
+[preview]
+tab_size = 4
+
