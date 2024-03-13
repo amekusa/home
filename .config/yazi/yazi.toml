@@ -28,8 +28,13 @@ edit = [
 [open]
 rules = [
 	# editable
-	{name = '*.svg',   use = ['edit', 'open', 'reveal']},
+	{name = '*.toml',  use = ['edit', 'open', 'reveal']},
+	{name = '*.yaml',  use = ['edit', 'open', 'reveal']},
+	{name = '*.yml',   use = ['edit', 'open', 'reveal']},
 	{name = '*.json',  use = ['edit', 'open', 'reveal']},
+	{name = '*.xhtml', use = ['edit', 'open', 'reveal']},
+	{name = '*.xml',   use = ['edit', 'open', 'reveal']},
+	{name = '*.svg',   use = ['edit', 'open', 'reveal']},
 	{mime = 'text/*',  use = ['edit', 'open', 'reveal']},
 
 	# executable
