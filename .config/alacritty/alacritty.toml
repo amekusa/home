@@ -32,7 +32,7 @@ y = 1
 startup_mode = 'Windowed'
 dynamic_padding = true  # center the content?
 resize_increments = true
-opacity = 1.0
+opacity = 0.95
 blur = false
 
 [window.padding]
