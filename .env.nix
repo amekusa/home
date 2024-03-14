@@ -2,13 +2,21 @@ with import <nixpkgs> {}; [
 
 bash
 zsh
+openssl
 openssh
 jq
+
 ripgrep
+fd
+fzf
 
 tmux
-nnn
-yazi
+#nnn
+#yazi
+lf
+felix-fm
+xplr
+
 nano
 micro
 neovim
@@ -24,9 +32,11 @@ nodejs
 php
 php81Packages.composer
 go
+lua
 ruby
 
 musikcube
+nb
 
 # To install:
 #   nix-env -irf .env.nix
