@@ -18,7 +18,6 @@ felix-fm
 xplr
 
 nano
-micro
 neovim
 
 git
