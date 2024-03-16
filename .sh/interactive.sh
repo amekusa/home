@@ -30,9 +30,6 @@ alias vi='nvim'
 alias vim='nvim'
 alias vimdiff='nvim -d'
 
-# fix micro + tmux conflicts
-alias micro='TERM=xterm-256color micro'
-
 # npm shortcuts
 alias nrun='npm run'
 alias nbuild='npm run build'
@@ -42,8 +39,11 @@ alias nwatch='npm run watch'
 # VSCodium
 alias code='/Applications/VSCodium.app/Contents/Resources/app/bin/codium'
 
-# nnn
-alias n='nnn'
+# xplr
+alias x='cd "$(xplr --print-pwd-as-result)"'
+
+# fd
+alias fd='fd -u'  # force not hiding anything
 
 # yazi
 function y() {
