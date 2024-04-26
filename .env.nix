@@ -28,6 +28,7 @@ nmap
 arp-scan
 
 nodejs
+deno
 php
 php81Packages.composer
 go
