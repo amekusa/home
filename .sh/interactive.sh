@@ -36,22 +36,17 @@ alias nbuild='npm run build'
 alias ntest='npm run test'
 alias nwatch='npm run watch'
 
-# VSCodium
-alias code='/Applications/VSCodium.app/Contents/Resources/app/bin/codium'
+# pico8
+alias pico8='/Applications/PICO-8.app/Contents/MacOS/pico8'
 
-# xplr
-alias x='cd "$(xplr --print-pwd-as-result)"'
+# vscodium
+alias code='/Applications/VSCodium.app/Contents/Resources/app/bin/codium'
 
 # fd
 alias fd='fd -u'  # force not hiding anything
 
-# yazi
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && cd -- "$cwd"
-	rm -f -- "$tmp"
-}
+# xplr
+alias x='cd "$(xplr --print-pwd-as-result)"'
 
 # lf
 lf() {
