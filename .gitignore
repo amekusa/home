@@ -10,7 +10,6 @@
 !/.zshrc
 
 !/.sh/
-!/.sh/shlib
 !/.sh/*.conf
 !/.sh/*.sh
 !/.sh/lib/
