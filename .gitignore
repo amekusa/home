@@ -17,6 +17,8 @@
 !/.sh/lib/*
 !/.sh/scripts/
 !/.sh/scripts/*.sh
+!/.sh/assets/
+!/.sh/assets/*
 
 !/.gitignore_global
 !/.tmux.conf
