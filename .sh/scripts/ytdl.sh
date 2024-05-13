@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 BASE="$HOME/.sh"
-. "$BASE/shlib/util.sh"
-. "$BASE/shlib/format.sh"
+. "$BASE/lib/ush/load" util
+. "$BASE/lib/ush/load" format; _ansi
 
 # ---- config ----
 FORMAT="bestvideo[ext!=webm][height<=720]+bestaudio[ext!=webm]/bestvideo+bestaudio/best"

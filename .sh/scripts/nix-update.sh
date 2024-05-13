@@ -7,7 +7,7 @@
 # ============================================ *
 
 base="$HOME/.sh"
-. "$base/shlib/format.sh"
+. "$base/lib/ush/load" format; _ansi
 
 echo "Fetching the latest nixpkgs revision via Prometheus API..."
 url="https://prometheus.nixos.org/api/v1/query?query=channel_revision"

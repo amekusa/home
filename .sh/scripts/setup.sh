@@ -12,24 +12,24 @@
 # =========================================== *
 
 BASE="$HOME/.sh"
-. "$BASE/shlib/util.sh"
-. "$BASE/shlib/io.sh"
-. "$BASE/shlib/format.sh"
-. "$BASE/shlib/task.sh"
+. "$BASE/lib/ush/load" util
+. "$BASE/lib/ush/load" io
+. "$BASE/lib/ush/load" format; _ansi
+. "$BASE/lib/ush/load" task
 
-task-system --save-to "$BASE/.setup.tasks" "$@"
+_task-system --save-to "$BASE/.setup.tasks" "$@"
 
 
 # ---- nix ----
-if task NIX -r; then
-	_has-cmd nix || fail "nix not found"
+if _task NIX -r; then
+	_has-cmd nix || _fail "nix not found"
 	nix-env -irf "$HOME/.env.nix"
-ksat; fi
+_ksat; fi
 
 
 # ---- brew ----
-if task BREW; then
-	_has-cmd brew || fail "brew not found"
+if _task BREW; then
+	_has-cmd brew || _fail "brew not found"
 	pkgs=(
 		cmake
 		ninja
@@ -38,12 +38,12 @@ if task BREW; then
 	for each in "${pkgs[@]}"; do
 		_q brew list "$each" || brew install "$each"
 	done
-ksat; fi
+_ksat; fi
 
 
 # ---- npm ----
-if task NPM; then
-	_has-cmd npm || fail "npm not found"
+if _task NPM; then
+	_has-cmd npm || _fail "npm not found"
 	npm config set prefix "$(_dir "$NPM_PREFIX")"
 	pkgs=(
 		"npm-check-updates"
@@ -56,11 +56,11 @@ if task NPM; then
 	for each in "${pkgs[@]}"; do
 		npm ls -g "$each" || npm install -g "$each"
 	done
-ksat; fi
+_ksat; fi
 
 
 # ---- vscodium ----
-if task VSCODE; then
+if _task VSCODE; then
 	exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
 	dir="$HOME/Library/Application Support/VSCodium/User"
 	if [ -d "$dir" ]; then
@@ -93,6 +93,6 @@ if task VSCODE; then
 		"$exe" --install-extension "$each" &&
 		_success "Installed VSCode extension '$each'"
 	done;
-ksat; fi
+_ksat; fi
 
 _success "Done."

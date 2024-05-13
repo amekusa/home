@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 BASE="$HOME/.sh"
-. "$BASE/shlib/format.sh"
+. "$BASE/lib/ush/load" format; _ansi
 
 WAIT=45
 
@@ -14,17 +14,17 @@ pmset displaysleepnow
 started_at=$(date +%s)
 
 echo
-echo -e "---- ${B_}HOMEBREW${RST} --------"
+echo -e "---- ${b_}HOMEBREW${RST} --------"
 brew update
 brew upgrade
 brew cleanup
 
 echo
-echo -e "---- ${B_}NPM${RST} --------"
+echo -e "---- ${b_}NPM${RST} --------"
 npm update -g
 
 echo
-echo -e "---- ${B_}COMPOSER${RST} --------"
+echo -e "---- ${b_}COMPOSER${RST} --------"
 composer global update
 
 ended_at=$(date +%s)
