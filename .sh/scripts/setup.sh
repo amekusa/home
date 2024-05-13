@@ -51,7 +51,7 @@ if _task NPM; then
 		"c8"
 		"mocha"
 		"gulp"
-		"jsdoc@3.6.11"
+		"jsdoc"
 	)
 	for each in "${pkgs[@]}"; do
 		npm ls -g "$each" || npm install -g "$each"
