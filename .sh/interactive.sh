@@ -53,6 +53,13 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# lf
+lf() {
+	# `command` is needed in case `lfcd` is aliased to `lf`
+	cd "$(command lf -print-last-dir "$@")"
+}
+
 # start/stop server
 alias start-server='brew services run mariadb; php-fpm -D; sudo nginx'
 alias stop-server='brew services stop mariadb; killall php-fpm; sudo nginx -s stop'
+
