@@ -42,6 +42,9 @@ alias pico8='/Applications/PICO-8.app/Contents/MacOS/pico8'
 # vscodium
 alias code='/Applications/VSCodium.app/Contents/Resources/app/bin/codium'
 
+# ripgrep
+alias rg='rg --no-ignore'  # do not exclude gitignore'd files
+
 # fd
 alias fd='fd -u'  # force not hiding anything
 
