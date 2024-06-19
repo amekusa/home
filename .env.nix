@@ -34,6 +34,11 @@ php81Packages.composer
 go
 lua
 ruby
+stack
+
+glow  # markdown viewer
+wordnet  # wordnet dictionary (wn)
+wiki-tui  # wikipedia viewer
 
 musikcube
 nb
