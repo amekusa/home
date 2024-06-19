@@ -48,6 +48,9 @@ alias rg='rg --no-ignore'  # do not exclude gitignore'd files
 # fd
 alias fd='fd -u'  # force not hiding anything
 
+# wiki-tui
+alias wiki='wiki-tui'
+
 # xplr
 alias x='cd "$(xplr --print-pwd-as-result)"'
 
