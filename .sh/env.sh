@@ -42,6 +42,7 @@ fi
 if [ "$env_nix" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
   . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
   export NIX_PATH="$HOME/.nix-defexpr"
+  export NIXPKGS_ALLOW_UNFREE=1
 fi
 
 # python
