@@ -6,6 +6,8 @@
 
 # ---- aliases ----
 
+alias h='help'
+
 # cd
 alias cd='scd'
 alias ..='cd ..'
