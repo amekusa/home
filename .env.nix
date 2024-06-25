@@ -36,6 +36,7 @@ lua
 ruby
 stack
 
+chafa  # image viewer
 glow  # markdown viewer
 wordnet  # wordnet dictionary (wn)
 wiki-tui  # wikipedia viewer
