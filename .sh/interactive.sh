@@ -56,6 +56,20 @@ alias wiki='wiki-tui'
 # xplr
 alias x='cd "$(xplr --print-pwd-as-result)"'
 
+# chafa
+img() {
+	local sym="sextant"
+	sym="$sym+[+.·:●]"
+	sym="$sym+u2583..u2585"
+	sym="$sym+u258b..u258d"
+	local opts=(
+		--symbols "$sym"
+		--color-space din99d
+	)
+	[ -n "$TMUX" ] && opts+=(--passthrough tmux)
+	chafa "${opts[@]}" "$@"
+}
+
 # lf
 lf() {
 	# `command` is needed in case `lfcd` is aliased to `lf`
