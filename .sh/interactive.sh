@@ -59,7 +59,6 @@ alias x='cd "$(xplr --print-pwd-as-result)"'
 # chafa
 img() {
 	local sym="sextant"
-	sym="$sym+[+.·:●]"
 	sym="$sym+u2583..u2585"
 	sym="$sym+u258b..u258d"
 	local opts=(
