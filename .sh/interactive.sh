@@ -64,6 +64,8 @@ img() {
 	local opts=(
 		--symbols "$sym"
 		--color-space din99d
+		--preprocess on
+		--work 9
 	)
 	[ -n "$TMUX" ] && opts+=(--passthrough tmux)
 	chafa "${opts[@]}" "$@"
