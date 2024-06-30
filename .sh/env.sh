@@ -21,9 +21,6 @@ fi
 export EDITOR=nvim
 export VISUAL=$EDITOR
 
-# support truecolor
-export COLORTERM=truecolor
-
 # homebrew
 if [ "$env_brew" = 1 ]; then
 	export HOMEBREW_PREFIX="$HOME/.brew"
