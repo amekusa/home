@@ -1,3 +1,23 @@
+# ==== Terminfo of Alacritty (v1.13.2) ====
+#
+# To make sure Alacritty works correctly, either the `alacritty` or
+# `alacritty-direct` terminfo must be used. The `alacritty` terminfo will be
+# picked up automatically if it is installed.
+#
+# If the following command returns without any errors, the `alacritty` terminfo is
+# already installed:
+#
+# ```sh
+# infocmp alacritty
+# ```
+#
+# If it is not present already, you can install it globally with the following
+# command:
+#
+# ```
+# sudo tic -xe alacritty,alacritty-direct alacritty.ti
+# ```
+#
 alacritty|alacritty terminal emulator,
     use=alacritty+common,
     rs1=\Ec\E]104\007,

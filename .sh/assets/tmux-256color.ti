@@ -1,7 +1,7 @@
 # Reconstructed via infocmp from file: /usr/share/terminfo/t/tmux-256color
 #
 # Usage:
-#   tic -x tmux-256color.info
+#   tic -x tmux-256color.ti
 #
 tmux-256color|tmux with 256 colors,
 	OTbs, OTpt, am, hs, km, mir, msgr, xenl, AX, G0,
