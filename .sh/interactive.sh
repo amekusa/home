@@ -83,6 +83,23 @@ lf() {
 	cd "$(command lf -print-last-dir "$@")"
 }
 
+# vt-cli: fetch info of a file
+vtf() {
+	[ -n "$1" ] || return
+	vt file "$(openssl dgst -md5 "$1" | awk '{print $2}')" --include="names,total_votes,times_submitted,last_analysis_date,last_analysis_results.*.result,last_analysis_stats,sigma_analysis_stats"
+}
+
+# vt-cli: upload a file to scan
+vts() {
+	[ -n "$1" ] || return
+	local lim=681574400
+	if [ "$(stat -f%z "$1")" -gt $lim ]; then
+		echo "file size can't be larger than $lim bytes"
+		return 1
+	fi
+	vt analysis "$(vt scan file "$1" | awk '{print $2}')"
+}
+
 # start/stop server
 alias start-server='brew services run mariadb; php-fpm -D; sudo nginx'
 alias stop-server='brew services stop mariadb; killall php-fpm; sudo nginx -s stop'
