@@ -64,6 +64,7 @@ md5() {
 
 # chafa
 img() {
+	[ -n "$1" ] || return
 	local sym="sextant+quad+half+solid"
 	sym="$sym+u2582..u2586"
 	sym="$sym+u258b..u258d"
