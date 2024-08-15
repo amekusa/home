@@ -56,6 +56,12 @@ alias wiki='wiki-tui'
 # xplr
 alias x='cd "$(xplr --print-pwd-as-result)"'
 
+# md5
+md5() {
+	[ -n "$1" ] || return
+	openssl dgst -md5 "$1" | awk '{print $2}'
+}
+
 # chafa
 img() {
 	local sym="sextant"
