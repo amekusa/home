@@ -64,8 +64,8 @@ md5() {
 
 # chafa
 img() {
-	local sym="sextant"
-	sym="$sym+u2583..u2585"
+	local sym="sextant+quad+half+solid"
+	sym="$sym+u2582..u2586"
 	sym="$sym+u258b..u258d"
 	local opts=(
 		--symbols "$sym"
