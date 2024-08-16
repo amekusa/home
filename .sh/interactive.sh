@@ -59,7 +59,7 @@ alias x='cd "$(xplr --print-pwd-as-result)"'
 # md5
 md5() {
 	[ -n "$1" ] || return
-	openssl dgst -md5 "$1" | awk '{print $2}'
+	openssl dgst -md5 "$1" | awk '{print $NF}'
 }
 
 # chafa
