@@ -87,7 +87,7 @@ lf() {
 # vt-cli: fetch info of a file
 vtf() {
 	[ -n "$1" ] || return
-	vt file "$(openssl dgst -md5 "$1" | awk '{print $2}')" --include="names,total_votes,times_submitted,last_analysis_date,last_analysis_results.*.result,last_analysis_stats,sigma_analysis_stats"
+	vt file "$(openssl dgst -md5 "$1" | awk '{print $NF}')" --include="names,total_votes,times_submitted,last_analysis_date,last_analysis_results.*.result,last_analysis_stats,sigma_analysis_stats"
 }
 
 # vt-cli: upload a file to scan
@@ -98,7 +98,7 @@ vts() {
 		echo "file size can't be larger than $lim bytes"
 		return 1
 	fi
-	vt analysis "$(vt scan file "$1" | awk '{print $2}')"
+	vt analysis "$(vt scan file "$1" | awk '{print $NF}')"
 }
 
 # start/stop server
