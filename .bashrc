@@ -2,4 +2,4 @@
 # ------------ *
 
 # functions & aliases
-. ~/.sh/interactive.sh
+. ~/.sh/int.sh

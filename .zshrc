@@ -15,7 +15,7 @@ bindkey "^[[3~"  delete-char
 bindkey "^[3;5~" delete-char
 
 # functions & aliases
-. ~/.sh/interactive.sh
+. ~/.sh/int.sh
 
 # cd hook (ls after cd)
 chpwd() {
