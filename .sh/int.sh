@@ -9,7 +9,6 @@
 alias h='help'
 
 # cd
-alias cd='scd'
 alias ..='cd ..'
 alias ...='cd ../../'
 
@@ -52,9 +51,6 @@ alias fd='fd -u'  # force not hiding anything
 
 # wiki-tui
 alias wiki='wiki-tui'
-
-# xplr
-alias x='cd "$(xplr --print-pwd-as-result)"'
 
 # md5
 md5() {
@@ -100,8 +96,4 @@ vts() {
 	fi
 	vt analysis "$(vt scan file "$1" | awk '{print $NF}')"
 }
-
-# start/stop server
-alias start-server='brew services run mariadb; php-fpm -D; sudo nginx'
-alias stop-server='brew services stop mariadb; killall php-fpm; sudo nginx -s stop'
 
