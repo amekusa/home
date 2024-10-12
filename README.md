@@ -6,8 +6,8 @@
 cd ~
 git init
 git remote add origin git@github.com:amekusa/home.git
-git pull origin
-git submodule update --init
+git pull origin master
+git submodule update --init --recursive
 ```
 
 ---
