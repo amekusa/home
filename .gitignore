@@ -12,6 +12,8 @@
 !/.sh/
 !/.sh/*.conf
 !/.sh/*.sh
+!/.sh/repos/
+!/.sh/repos/*
 !/.sh/lib/
 !/.sh/lib/*
 !/.sh/scripts/
@@ -26,6 +28,9 @@
 !/.editorconfig
 
 !/.config/
+
+# lf
+!/.config/lf
 
 # Yazi
 !/.config/yazi/
