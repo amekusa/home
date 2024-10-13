@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 BASE="$HOME/.sh"
-. "$BASE/lib/ush/load" format; _ansi
+. "$BASE/lib/ush/load" fmt; _ansi
 
 REPOS_DIR="$BASE/repos"
 REPOS=(

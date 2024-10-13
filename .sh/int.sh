@@ -1,7 +1,7 @@
 #  utils for interactive shell
 # ----------------------------- *
 
-. "$HOME/.sh/lib/ush/load" -p '' interactive
+. "$HOME/.sh/lib/ush/load" -p '' int
 
 
 # ---- aliases ----

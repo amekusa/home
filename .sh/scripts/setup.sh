@@ -14,7 +14,7 @@
 BASE="$HOME/.sh"
 . "$BASE/lib/ush/load" util
 . "$BASE/lib/ush/load" io
-. "$BASE/lib/ush/load" format; _ansi
+. "$BASE/lib/ush/load" fmt; _ansi
 . "$BASE/lib/ush/load" task
 
 _task-system --save-to "$BASE/.setup.tasks" "$@"
