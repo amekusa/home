@@ -43,6 +43,8 @@
 # Alacritty
 !/.config/alacritty/
 !/.config/alacritty/*
+!/.config/alacritty/themes/
+!/.config/alacritty/themes/*
 
 # Atom
 !/.atom/
