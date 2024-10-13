@@ -13,6 +13,7 @@ fzf
 
 tmux
 lf
+darwin.trash
 
 nano
 neovim
@@ -26,7 +27,7 @@ arp-scan
 
 nodejs
 php
-php81Packages.composer
+php82Packages.composer
 go
 lua
 ruby
