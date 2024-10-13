@@ -10,4 +10,4 @@ export HISTSIZE=512
 export SAVEHIST=$HISTSIZE
 
 # zsh-completions
-FPATH="$HOME/.sh/repos/zsh-completions/src:$FPATH"
+FPATH="$HOME/.sh/lib/zsh-completions/src:$FPATH"

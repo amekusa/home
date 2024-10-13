@@ -4,18 +4,18 @@
 [submodule ".config/lf"]
 	path = .config/lf
 	url = git@github.com:amekusa/lf.config.git
-[submodule ".sh/repos/zsh-autosuggestions"]
-	path = .sh/repos/zsh-autosuggestions
+[submodule ".sh/lib/zsh-autosuggestions"]
+	path = .sh/lib/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule ".sh/repos/zsh-syntax-highlighting"]
-	path = .sh/repos/zsh-syntax-highlighting
+[submodule ".sh/lib/zsh-syntax-highlighting"]
+	path = .sh/lib/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule ".sh/repos/zsh-completions"]
-	path = .sh/repos/zsh-completions
+[submodule ".sh/lib/zsh-completions"]
+	path = .sh/lib/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
-[submodule ".sh/repos/zsh-z"]
-	path = .sh/repos/zsh-z
+[submodule ".sh/lib/zsh-z"]
+	path = .sh/lib/zsh-z
 	url = https://github.com/agkozak/zsh-z
-[submodule ".sh/repos/powerlevel10k"]
-	path = .sh/repos/powerlevel10k
+[submodule ".sh/lib/powerlevel10k"]
+	path = .sh/lib/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k

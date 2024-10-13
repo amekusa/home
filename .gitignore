@@ -12,8 +12,6 @@
 !/.sh/
 !/.sh/*.conf
 !/.sh/*.sh
-!/.sh/repos/
-!/.sh/repos/*
 !/.sh/lib/
 !/.sh/lib/*
 !/.sh/scripts/
