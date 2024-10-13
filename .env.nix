@@ -4,6 +4,7 @@ bash
 zsh
 openssl
 openssh
+coreutils
 jq
 
 ripgrep
@@ -11,11 +12,7 @@ fd
 fzf
 
 tmux
-#nnn
-#yazi
 lf
-felix-fm
-xplr
 
 nano
 neovim
@@ -28,7 +25,6 @@ nmap
 arp-scan
 
 nodejs
-deno
 php
 php81Packages.composer
 go
