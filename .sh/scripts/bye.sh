@@ -11,7 +11,7 @@ sleep $WAIT
 caffeinate -i &
 pmset displaysleepnow
 
-started_at=$(date +%s)
+started_at=$(/bin/date +%s)
 
 echo
 echo -e "---- ${b_}HOMEBREW${RST} --------"
@@ -27,7 +27,7 @@ echo
 echo -e "---- ${b_}COMPOSER${RST} --------"
 composer global update
 
-ended_at=$(date +%s)
+ended_at=$(/bin/date +%s)
 elapsed=$((ended_at - started_at))
 
 echo
