@@ -1,7 +1,6 @@
 # Home Directory on macOS
 
 ## Installation
-
 ```sh
 cd ~
 git init
@@ -11,6 +10,17 @@ git submodule update --init --recursive
 ```
 
 ---
+
+## System Tweaks
+
+```sh
+# Turning off Spotlight indexing
+sudo mdutil -i off
+sudo mdutil -d
+
+# Deleting Spotlight indices
+sudo mdutil -X /
+```
 
 ## NPM
 Change global install path to `~/.npm-global`
@@ -140,6 +150,14 @@ ncu -g -u
 # Global ignore
 git config --global core.excludesfile ~/.gitignore_global
 
+# Default user identity
+git config --global user.name 'John Doe'
+git config --global user.email 'john@example.com'
+
 # Ddefault editor (nano)
-git config --global core.editor "nano"
+git config --global core.editor 'nano'
+
+# Showing all config values
+git config --global -l
 ```
+
