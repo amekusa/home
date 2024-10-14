@@ -1,6 +1,7 @@
 # Home Directory on macOS
 
 ## Installation
+
 ```sh
 cd ~
 git init
@@ -22,12 +23,26 @@ sudo mdutil -d
 sudo mdutil -X /
 ```
 
-## NPM
-Change global install path to `~/.npm-global`
+---
+
+## Git
+
 ```sh
-npm config set prefix "${HOME}/.npm-global"
+# Global ignore
+git config --global core.excludesfile ~/.gitignore_global
+
+# Default user identity
+git config --global user.name 'John Doe'
+git config --global user.email 'john@example.com'
+
+# Default editor (nano)
+git config --global core.editor 'nano'
+
+# Showing all config values
+git config --global -l
 ```
 
+---
 
 ## Homebrew
 
@@ -40,6 +55,7 @@ brew doctor
 ```
 
 ### Packages to install
+
 ```sh
 # Additional repositories:
 brew tap homebrew/services
@@ -64,6 +80,7 @@ brew cask install eloston-chromium
 ### Fixing curl failing due to expired certs
 1. Download https://curl.se/ca/cacert.pem
 2. Replace `/etc/ssl/cert.pem` with it
+
 ```sh
 cd /etc/ssl
 sudo mv cert.pem cert.pem.org
@@ -104,11 +121,11 @@ brew update
 
 ---
 
-## Node.js
-Install latest node via n.
+## NPM
 
 ```sh
-n latest
+# Change global install path to `~/.npm-global`
+npm config set prefix "${HOME}/.npm-global"
 ```
 
 ### Packages to install
@@ -140,24 +157,5 @@ npm ls -g --depth=0
 
 # Update packages (required: npm-check-updates)
 ncu -g -u
-```
-
----
-
-## Git
-
-```sh
-# Global ignore
-git config --global core.excludesfile ~/.gitignore_global
-
-# Default user identity
-git config --global user.name 'John Doe'
-git config --global user.email 'john@example.com'
-
-# Ddefault editor (nano)
-git config --global core.editor 'nano'
-
-# Showing all config values
-git config --global -l
 ```
 
