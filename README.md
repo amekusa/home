@@ -1,7 +1,6 @@
 # Home Directory on macOS
 
 ## Installation
-
 ```sh
 cd ~
 git init
@@ -13,7 +12,6 @@ git submodule update --init --recursive
 ---
 
 ## System Tweaks
-
 ```sh
 # Turning off Spotlight indexing
 sudo mdutil -i off
@@ -26,14 +24,13 @@ sudo mdutil -X /
 ---
 
 ## Git
-
 ```sh
 # Global ignore
 git config --global core.excludesfile ~/.gitignore_global
 
 # Default user identity
 git config --global user.name 'John Doe'
-git config --global user.email 'john@example.com'
+git config --global user.email 'john@example.com'  # do not expose *real email address
 
 # Default editor (nano)
 git config --global core.editor 'nano'
@@ -45,7 +42,6 @@ git config --global -l
 ---
 
 ## Homebrew
-
 ```sh
 # Install:
 git clone https://github.com/Homebrew/brew.git .brew
@@ -55,7 +51,6 @@ brew doctor
 ```
 
 ### Packages to install
-
 ```sh
 # Additional repositories:
 brew tap homebrew/services
@@ -80,7 +75,6 @@ brew cask install eloston-chromium
 ### Fixing curl failing due to expired certs
 1. Download https://curl.se/ca/cacert.pem
 2. Replace `/etc/ssl/cert.pem` with it
-
 ```sh
 cd /etc/ssl
 sudo mv cert.pem cert.pem.org
@@ -88,7 +82,6 @@ sudo cp ~/Downloads/cacert.pem ./cert.pem
 ```
 
 ### Enable the homebrew version of zsh as the default shell
-
 ```sh
 # Check the path to the zsh you want to enable
 which zsh
@@ -107,7 +100,6 @@ echo $SHELL
 ```
 
 ### Maintenance
-
 ```sh
 # Cleanup caches
 brew cleanup -s
@@ -122,14 +114,12 @@ brew update
 ---
 
 ## NPM
-
 ```sh
 # Change global install path to `~/.npm-global`
 npm config set prefix "${HOME}/.npm-global"
 ```
 
 ### Packages to install
-
 ```sh
 # Utilities:
 npm i -g npm-check-updates
@@ -150,7 +140,6 @@ npm i -g jsdoc
 ```
 
 ### Maintenance
-
 ```sh
 # To see all the packages installed:
 npm ls -g --depth=0
