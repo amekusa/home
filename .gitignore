@@ -44,13 +44,6 @@
 !/.config/alacritty/themes/
 !/.config/alacritty/themes/*
 
-# Atom
-!/.atom/
-!/.atom/config.cson
-!/.atom/keymap.cson
-!/.atom/snippets.cson
-!/.atom/styles.less
-
 # VSCode
 !/.vscode/
 !/.vscode/settings.json
