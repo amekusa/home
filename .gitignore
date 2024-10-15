@@ -30,14 +30,6 @@
 # lf
 !/.config/lf
 
-# Yazi
-!/.config/yazi/
-!/.config/yazi/*
-
-# iTerm
-!/.config/iterm/
-!/.config/iterm/*
-
 # Alacritty
 !/.config/alacritty/
 !/.config/alacritty/*
