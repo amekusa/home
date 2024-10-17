@@ -14,7 +14,7 @@ git submodule update --init --recursive
 ## System Tweaks
 ```sh
 # Turning off Spotlight indexing
-sudo mdutil -i off -d /
+sudo mdutil -a -i off -d
 
 # Deleting Spotlight indices
 sudo mdutil -X /
