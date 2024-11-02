@@ -153,7 +153,7 @@ ncu -g -u
 
 ### Circumventing the restriction of `pip install` by nix
 ```sh
-# This makes it installs pkg to '~/.local/bin'
-pip install --user --break-system-packages <pkg>
+# Use pipx instead
+pipx install <pkg>
 ```
 
