@@ -147,3 +147,13 @@ npm ls -g --depth=0
 ncu -g -u
 ```
 
+---
+
+## Python
+
+### Circumventing the restriction of `pip install` by nix
+```sh
+# This makes it installs pkg to '~/.local/bin'
+pip install --user --break-system-packages <pkg>
+```
+
