@@ -9,6 +9,7 @@
 alias h='help'
 
 # cd
+alias d='cd'
 alias ..='cd ..'
 alias ...='cd ../../'
 
