@@ -6,6 +6,7 @@ openssl
 openssh
 coreutils
 jq
+wget
 
 ripgrep
 fd
@@ -30,8 +31,11 @@ php
 php82Packages.composer
 go
 lua
+python3
+python311Packages.pip
 ruby
 stack
+sqlite
 
 chafa  # image viewer
 glow  # markdown viewer
