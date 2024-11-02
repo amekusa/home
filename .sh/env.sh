@@ -45,9 +45,6 @@ if [ "$env_nix" = 1 ] && [ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-d
   export NIXPKGS_ALLOW_UNFREE=1
 fi
 
-# python
-PATH="$PATH:$HOME/Library/Python/3.9/bin"
-
 # node
 export NPM_PREFIX="$HOME/.npm-global"
 PATH="$PATH:./node_modules/.bin:$NPM_PREFIX/bin"
@@ -70,13 +67,13 @@ PATH="$PATH:$GEM_HOME/bin"
 
 # odin
 #   NOTE: To install & build odin compiler
-#   1. git clone https://github.com/odin-lang/Odin ~/repos/odin
-#   2. cd ~/repos/odin; make
-export ODIN_ROOT="$HOME/repos/odin"
-PATH="$PATH:$ODIN_ROOT"
+#   1. git clone https://github.com/odin-lang/Odin ~/.sh/lib/odin
+#   2. cd ~/.sh/lib/odin; make
+# export ODIN_ROOT="$HOME/.sh/lib/odin"
+# PATH="$PATH:$ODIN_ROOT"
 
-# custom executables
-PATH="$PATH:$HOME/.sh/bin"
+# user-end apps & scripts
+PATH="$PATH:$HOME/.local/bin"
 PATH="$PATH:$HOME/.sh/scripts"
 
 # done
