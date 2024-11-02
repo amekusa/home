@@ -1,5 +1,4 @@
-#  utils for interactive shell
-# ----------------------------- *
+# === INTERACTIVE SHELL UTIL ===
 
 . "$HOME/.sh/lib/ush/load" -p '' int
 

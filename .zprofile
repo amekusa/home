@@ -1,5 +1,4 @@
-#  zsh login setup
-# ----------------- *
+# === ZSH LOGIN SETUP ===
 
 # environment variables
 . ~/.sh/env.sh

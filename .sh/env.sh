@@ -1,5 +1,4 @@
-#  shell environment variables
-# ----------------------------- *
+# === ENVIRONMENT VARIABLES ===
 
 # save/restore the system default PATH & FPATH
 if [ -z "$_FIRST_LOGIN" ]; then

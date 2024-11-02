@@ -1,4 +1,4 @@
-#  global .gitignore
+# === GLOBAL .GITIGNORE ===
 #
 #  To install:
 #  $ git config --global core.excludesfile ~/.gitignore_global
