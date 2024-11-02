@@ -155,6 +155,8 @@ ncu -g -u
 ```sh
 # Use pipx instead
 pipx install <pkg>
-#   NOTE: Installed packages are in ~/.local/bin
+#   NOTE:
+#   - pipx is only for managing end-user applications, not for libraries
+#   - Installed apps reside in ~/.local/bin
 ```
 
