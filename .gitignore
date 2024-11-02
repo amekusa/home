@@ -21,7 +21,6 @@
 
 !/.gitignore_global
 !/.tmux.conf
-!/.hyper.js
 !/.p10k.zsh
 !/.editorconfig
 
