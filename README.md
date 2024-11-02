@@ -155,5 +155,6 @@ ncu -g -u
 ```sh
 # Use pipx instead
 pipx install <pkg>
+#   NOTE: Installed packages are in ~/.local/bin
 ```
 
