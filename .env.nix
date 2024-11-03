@@ -5,48 +5,56 @@ zsh
 openssl
 openssh
 coreutils
-jq
-wget
 
+# ESSENTIALS
+tmux
+wget
+jq
 ripgrep
-fd
 fzf
 
-tmux
-lf
+# GENERAL UTILS
 darwin.trash
+nix-search-cli
+fd
+lf
 
+# NETWORK UTILS
+nmap
+arp-scan
+
+# EDITORS
 nano
 neovim
 
+# DEVELOPMENT TOOLS
 git
 tig
 lazygit
 
-nmap
-arp-scan
-
+# LANGUAGES
 nodejs
-php
-php82Packages.composer
 go
 lua
-python3
+python311
 python311Packages.pip
 python311Packages.pipx
 ruby
+php
+php82Packages.composer
+sqlite
 odin
 stack
-sqlite
 
+# MISC.
 ffmpeg-full  # video & audio processing tool
 chafa  # image viewer
 glow  # markdown viewer
 wordnet  # wordnet dictionary (wn)
 wiki-tui  # wikipedia viewer
+musikcube  # music
+nb  # note taking
 
-musikcube
-nb
 
 # To install:
 #   nix-env -irf .env.nix
