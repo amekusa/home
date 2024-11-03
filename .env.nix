@@ -35,9 +35,11 @@ python3
 python311Packages.pip
 python311Packages.pipx
 ruby
+odin
 stack
 sqlite
 
+ffmpeg-full  # video & audio processing tool
 chafa  # image viewer
 glow  # markdown viewer
 wordnet  # wordnet dictionary (wn)
