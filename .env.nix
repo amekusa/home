@@ -44,7 +44,6 @@ php
 php82Packages.composer
 sqlite
 odin
-stack
 
 # MISC.
 ffmpeg-full  # video & audio processing tool
