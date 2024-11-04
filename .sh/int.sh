@@ -16,6 +16,8 @@ alias ...='cd ../../'
 alias ls='/bin/ls -pG'
 alias ll='/bin/ls -pGhl'
 alias la='/bin/ls -pGhla'
+#   NOTE: Q. Why full path?
+#         A. To avoid using coreutils version of ls
 
 # run the previous command with sudo
 alias plz='sudo $(fc -ln -1)'
