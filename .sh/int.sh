@@ -13,9 +13,9 @@ alias ..='cd ..'
 alias ...='cd ../../'
 
 # ls with options
-alias ls='ls -pG'
-alias ll='ls -hl'
-alias la='ls -hal'
+alias ls='/bin/ls -pG'
+alias ll='/bin/ls -pGhl'
+alias la='/bin/ls -pGhal'
 
 # run the previous command with sudo
 alias plz='sudo $(fc -ln -1)'
