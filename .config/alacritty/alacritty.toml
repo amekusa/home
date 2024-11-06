@@ -48,7 +48,9 @@ multiplier = 3  # scrolling speed
 
 [keyboard]
 bindings = [
-	{key = 'Tab', mods = 'Control|Shift', action = 'SelectPreviousTab'},
-	{key = 'Tab', mods = 'Control',       action = 'SelectNextTab'},
+	{key = 'Tab',    mods = 'Control|Shift', action = 'SelectPreviousTab'},
+	{key = 'Tab',    mods = 'Control',       action = 'SelectNextTab'},
+	{key = 'Return', mods = 'Shift',         chars  = "\u001b[13;2u"},
+	{key = 'Return', mods = 'Control',       chars  = "\u001b[13;5u"},
 ]
 
