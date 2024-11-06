@@ -16,10 +16,6 @@ fi
 . "$HOME/.sh/env.conf"
 . "$HOME/.sh/env.local"
 
-# default editor
-export EDITOR=nvim
-export VISUAL=$EDITOR
-
 # homebrew
 if [ "$env_brew" = 1 ]; then
 	export HOMEBREW_PREFIX="$HOME/.brew"
@@ -65,11 +61,11 @@ export GEM_PATH="$GEM_HOME"
 PATH="$PATH:$GEM_HOME/bin"
 
 # odin
-#   NOTE: To install & build odin compiler
-#   1. git clone https://github.com/odin-lang/Odin ~/.sh/lib/odin
-#   2. cd ~/.sh/lib/odin; make
-# export ODIN_ROOT="$HOME/.sh/lib/odin"
-# PATH="$PATH:$ODIN_ROOT"
+export ODIN_ROOT="$HOME/.sh/lib/odin"
+PATH="$PATH:$ODIN_ROOT"
+#   NOTE: To install & build odin compiler:
+#         1. git clone https://github.com/odin-lang/Odin ~/.sh/lib/odin
+#         2. cd ~/.sh/lib/odin; make release-native
 
 # user-end apps & scripts
 PATH="$PATH:$HOME/.local/bin"
@@ -78,3 +74,11 @@ PATH="$PATH:$HOME/.sh/scripts"
 # done
 export PATH
 export FPATH
+
+# set default editor
+if command -v nvim &> /dev/null
+	then export EDITOR=nvim
+	else export EDITOR=nano
+fi
+export VISUAL=$EDITOR
+
