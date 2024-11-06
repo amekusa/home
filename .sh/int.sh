@@ -12,7 +12,7 @@ alias d='cd'
 alias ..='cd ..'
 alias ...='cd ../../'
 
-# ls with options
+# ls with options (BSD)
 alias ls='/bin/ls -pG'
 alias ll='/bin/ls -pGhl'
 alias la='/bin/ls -pGhla'
@@ -20,7 +20,7 @@ alias la='/bin/ls -pGhla'
 #         A. To avoid using coreutils version of ls
 
 # run the previous command with sudo
-alias plz='sudo $(fc -ln -1)'
+alias pls='sudo $(fc -ln -1)'
 
 # tmux
 alias tm='tmux'
@@ -44,6 +44,9 @@ alias pico8='/Applications/PICO-8.app/Contents/MacOS/pico8'
 
 # vscodium
 alias code='/Applications/VSCodium.app/Contents/Resources/app/bin/codium'
+
+# iina (video player)
+alias iina='/Applications/IINA.app/Contents/MacOS/iina-cli'
 
 # ripgrep
 alias rg='rg --no-ignore'  # do not exclude gitignore'd files
