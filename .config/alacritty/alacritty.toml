@@ -12,26 +12,28 @@ blinking = 'Always'  # Never / Off / On / Always
 hide_when_typing = true
 
 [font]
-size = 13.0
-builtin_box_drawing = false  # use built-in font for powerline symbols?
+size = 11.0
+builtin_box_drawing = true  # use built-in font for powerline symbols?
 
 [font.normal]
-family = 'MesloLGM Nerd Font'
-style  = 'Regular'
+family = 'JetBrainsMonoNL Nerd Font'
+style  = 'ExtraLight'
+# family = 'MesloLGM Nerd Font'
+# style  = 'Regular'
 
 [font.offset]
-x = 1  # letter spacing
-y = 2  # line spacing
+x = 0  # letter spacing
+y = 0  # line spacing
 
 [font.glyph_offset]
 x = 0
-y = 1
+y = 0
 
 [window]
 startup_mode = 'Windowed'
-dynamic_padding = true  # center the content?
+dynamic_padding = false  # center the content?
 resize_increments = true
-opacity = 0.95
+opacity = 1
 blur = false
 
 [window.padding]
