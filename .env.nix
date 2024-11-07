@@ -43,7 +43,6 @@ ruby
 php
 php82Packages.composer
 sqlite
-odin
 
 # MISC.
 ffmpeg-full  # video & audio processing tool
