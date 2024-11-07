@@ -45,9 +45,6 @@ alias pico8='/Applications/PICO-8.app/Contents/MacOS/pico8'
 # vscodium
 alias code='/Applications/VSCodium.app/Contents/Resources/app/bin/codium'
 
-# iina (video player)
-alias iina='/Applications/IINA.app/Contents/MacOS/iina-cli'
-
 # ripgrep
 alias rg='rg --no-ignore'  # do not exclude gitignore'd files
 
