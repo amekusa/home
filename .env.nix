@@ -52,6 +52,7 @@ wordnet  # wordnet dictionary (wn)
 wiki-tui  # wikipedia viewer
 musikcube  # music
 nb  # note taking
+iina  # video player
 
 
 # To install:
