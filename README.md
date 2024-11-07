@@ -149,6 +149,16 @@ ncu -g -u
 
 ---
 
+## TMUX
+
+### Copying text
+1. Go to scroll mode with `Ctrl+A` `U`
+2. Move cursor to the text you want to copy
+3. `Space` to go to selection mode
+4. `Enter` to copy the selected text
+
+---
+
 ## Python
 
 ### Circumventing the restriction of `pip install` by nix
