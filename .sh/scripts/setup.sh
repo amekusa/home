@@ -27,20 +27,6 @@ if _task NIX -r; then
 _ksat; fi
 
 
-# ---- brew ----
-if _task BREW; then
-	_has-cmd brew || _fail "brew not found"
-	pkgs=(
-		cmake
-		ninja
-		llvm@14
-	)
-	for each in "${pkgs[@]}"; do
-		_q brew list "$each" || brew install "$each"
-	done
-_ksat; fi
-
-
 # ---- npm ----
 if _task NPM; then
 	_has-cmd npm || _fail "npm not found"
@@ -72,15 +58,13 @@ if _task VSCODE; then
 		for each in "${files[@]}"; do
 			src="$HOME/.vscode/$each"
 			_symlink -F "$src" "$dir/$each" &&
-			_success "Symlinked VSCode $each"
+			_success "Symlinked: '$src' > '$dir/$each'"
 		done
 	fi
 	extensions=(
 		# themes
-		"paulvandermeijs.loved"
-		"Holllo.love"
-		"qufiwefefwoyn.kanagawa"
 		"jdinhlife.gruvbox"
+		"paulvandermeijs.loved"
 
 		# utils
 		"EditorConfig.EditorConfig"
