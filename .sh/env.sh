@@ -82,3 +82,10 @@ if command -v nvim &> /dev/null
 fi
 export VISUAL=$EDITOR
 
+# xdg (cross-desktop group) paths
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+#   NOTE: Some applications refers these paths
+
