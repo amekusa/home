@@ -1,4 +1,4 @@
-# ==== Terminfo of Alacritty (v1.13.2) ====
+# Alacritty (v1.13.2) terminfo
 #
 # To make sure Alacritty works correctly, either the `alacritty` or
 # `alacritty-direct` terminfo must be used. The `alacritty` terminfo will be
@@ -15,7 +15,7 @@
 # command:
 #
 # ```
-# sudo tic -xe alacritty,alacritty-direct alacritty.ti
+# /usr/bin/tic -xe alacritty,alacritty-direct -o "$HOME/.local/share/terminfo" alacritty.ti
 # ```
 #
 alacritty|alacritty terminal emulator,
