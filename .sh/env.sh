@@ -89,3 +89,8 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 #   NOTE: Some applications refers these paths
 
+# set terminfo directory
+export TERMINFO="$XDG_DATA_HOME/terminfo"
+export TERMINFO_DIRS="$TERMINFO"
+#   NOTE: The default directory is "$HOME/.terminfo", but it is said that macOS has some issues with it
+
