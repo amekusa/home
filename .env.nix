@@ -53,6 +53,8 @@ wiki-tui  # wikipedia viewer
 musikcube  # music
 nb  # note taking
 iina  # video player
+cheat  # cheatsheet manager
+neo  # matrix-like screen effect
 
 
 # To install:
