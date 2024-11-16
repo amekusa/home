@@ -2,6 +2,9 @@ import = [
 	'~/.config/alacritty/themes/kanagawa.toml',
 ]
 
+[env]
+TERM = 'alacritty'  # NOTE: 'alacritty' terminfo needs to be installed
+
 [cursor]
 
 [cursor.style]
