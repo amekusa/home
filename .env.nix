@@ -18,6 +18,7 @@ darwin.trash
 nix-search-cli
 fd
 lf
+pstree
 
 # NETWORK UTILS
 nmap
