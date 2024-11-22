@@ -56,6 +56,7 @@ nb  # note taking
 iina  # video player
 cheat  # cheatsheet manager
 neo  # matrix-like screen effect
+vt-cli  # VirusTotal client
 
 
 # To install:
