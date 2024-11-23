@@ -6,8 +6,8 @@
 
 # Checks if the program passed by the 1st argument callable.
 # If it is not, starts the default shell instead.
-if ! command -v "$1" 2>&1 >/dev/null
-	then exec -l "$SHELL"
-	else exec "$@"
+if command -v "$1" 2>&1 >/dev/null
+	then exec "$@"
+	else exec -l "$SHELL"
 fi
 
