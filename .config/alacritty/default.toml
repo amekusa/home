@@ -1,8 +1,8 @@
 # === Custom Settings for Alacritty ===
 # Copy 'default.toml' as 'local.toml' to overwrite.
 
-[shell]
 ## Uncomment to run tmux directly at start
+# [shell]
 # program = '/Users/YOU/.login.sh'
 # args = ['/Users/YOU/.nix-profile/bin/tmux']
 
@@ -55,12 +55,4 @@ lines   = 64
 [scrolling]
 history = 10000
 multiplier = 3  # scrolling speed
-
-[keyboard]
-bindings = [
-	{key = 'Tab',    mods = 'Control|Shift', action = 'SelectPreviousTab'},
-	{key = 'Tab',    mods = 'Control',       action = 'SelectNextTab'},
-	{key = 'Return', mods = 'Shift',         chars  = "\u001b[13;2u"},
-	{key = 'Return', mods = 'Control',       chars  = "\u001b[13;5u"},
-]
 
