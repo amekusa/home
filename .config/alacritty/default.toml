@@ -1,0 +1,66 @@
+# === Custom Settings for Alacritty ===
+# Copy 'default.toml' as 'local.toml' to overwrite.
+
+[shell]
+## Uncomment to run tmux directly at start
+# program = '/Users/YOU/.login.sh'
+# args = ['/Users/YOU/.nix-profile/bin/tmux']
+
+[env]
+# TERM = 'alacritty'  # NOTE: 'alacritty' terminfo needs to be installed
+
+[cursor]
+
+[cursor.style]
+shape = 'Beam'  # Block / Underline / Beam
+blinking = 'Always'  # Never / Off / On / Always
+
+[mouse]
+hide_when_typing = true
+
+[font]
+size = 12.0
+builtin_box_drawing = true  # use built-in font for powerline symbols?
+
+[font.normal]
+# family = 'JetBrainsMonoNL Nerd Font'
+# style  = 'ExtraLight'
+
+# family = 'MesloLGM Nerd Font'
+# style  = 'Regular'
+
+[font.offset]
+x = 0  # letter spacing
+y = 0  # line spacing
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[window]
+startup_mode = 'Windowed'
+dynamic_padding = true  # center the content?
+resize_increments = true
+opacity = 1
+blur = false
+
+[window.padding]
+x = 0
+y = 0
+
+[window.dimensions]
+columns = 128
+lines   = 64
+
+[scrolling]
+history = 10000
+multiplier = 3  # scrolling speed
+
+[keyboard]
+bindings = [
+	{key = 'Tab',    mods = 'Control|Shift', action = 'SelectPreviousTab'},
+	{key = 'Tab',    mods = 'Control',       action = 'SelectNextTab'},
+	{key = 'Return', mods = 'Shift',         chars  = "\u001b[13;2u"},
+	{key = 'Return', mods = 'Control',       chars  = "\u001b[13;5u"},
+]
+

@@ -4,6 +4,8 @@
 
 !/README.md
 
+!/.login.sh
+
 !/.bash_profile
 !/.zprofile
 !/.bashrc
@@ -32,6 +34,7 @@
 # Alacritty
 !/.config/alacritty/
 !/.config/alacritty/*
+/.config/alacritty/local.toml
 !/.config/alacritty/themes/
 !/.config/alacritty/themes/*
 
