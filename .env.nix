@@ -4,7 +4,6 @@ bash
 zsh
 openssl
 openssh
-coreutils
 
 # ESSENTIALS
 tmux
