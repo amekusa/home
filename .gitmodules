@@ -1,6 +1,9 @@
 [submodule ".sh/lib/ush"]
 	path = .sh/lib/ush
 	url = https://github.com/amekusa/u.sh.git
+[submodule ".config/tmux"]
+	path = .config/tmux
+	url = https://github.com/amekusa/tmux.config.git
 [submodule ".config/lf"]
 	path = .config/lf
 	url = https://github.com/amekusa/lf.config.git
@@ -19,6 +22,3 @@
 [submodule ".sh/lib/powerlevel10k"]
 	path = .sh/lib/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
-[submodule ".config/tmux"]
-	path = .config/tmux
-	url = https://github.com/amekusa/tmux.config.git
