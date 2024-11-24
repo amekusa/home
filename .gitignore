@@ -26,7 +26,10 @@
 
 !/.config/
 
-# lf
+# TMUX
+!/.config/tmux
+
+# LF
 !/.config/lf
 
 # Alacritty
