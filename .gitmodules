@@ -1,9 +1,9 @@
 [submodule ".sh/lib/ush"]
 	path = .sh/lib/ush
-	url = git@github.com:amekusa/u.sh.git
+	url = https://github.com/amekusa/u.sh.git
 [submodule ".config/lf"]
 	path = .config/lf
-	url = git@github.com:amekusa/lf.config.git
+	url = https://github.com/amekusa/lf.config.git
 [submodule ".sh/lib/zsh-autosuggestions"]
 	path = .sh/lib/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
