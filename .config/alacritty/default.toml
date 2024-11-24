@@ -1,11 +1,6 @@
 # === Custom Settings for Alacritty ===
 # Copy 'default.toml' as 'local.toml' to overwrite.
 
-## Uncomment to run tmux directly at start
-# [shell]
-# program = '/Users/YOU/.login.sh'
-# args = ['/Users/YOU/.nix-profile/bin/tmux']
-
 [env]
 # TERM = 'alacritty'  # NOTE: 'alacritty' terminfo needs to be installed
 
