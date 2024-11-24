@@ -18,6 +18,7 @@ nix-search-cli
 fd
 lf
 pstree
+bottom  # htop alternative (cmd: btm)
 
 # NETWORK UTILS
 nmap
