@@ -55,9 +55,11 @@ musikcube  # music
 nb  # note taking
 iina  # video player
 cheat  # cheatsheet manager
-neo  # matrix-like screen effect
 vt-cli  # VirusTotal client
 
+# TOYS
+tenki  # clock for terminal
+neo  # matrix-like screen effect
 
 # To install:
 #   nix-env -irf .env.nix

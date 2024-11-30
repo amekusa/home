@@ -23,7 +23,7 @@ alias la='/bin/ls -pGhla'
 alias pls='sudo $(fc -ln -1)'
 
 # tmux
-alias tm='tmux'
+alias tm='exec tmux'
 
 # lazygit
 alias lg='lazygit'
