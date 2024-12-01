@@ -34,6 +34,7 @@ tig
 lazygit
 
 # LANGUAGES
+shellcheck
 nodejs
 go
 lua
