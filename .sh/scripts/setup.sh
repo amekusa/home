@@ -12,13 +12,13 @@
 #
 # =========================================== *
 
-BASE="$HOME/.sh"
-. "$BASE/lib/ush/load" util
-. "$BASE/lib/ush/load" io
-. "$BASE/lib/ush/load" fmt; _ansi
-. "$BASE/lib/ush/load" task
+base="$HOME/.sh"
+. "$base/lib/ush/load" util
+. "$base/lib/ush/load" io
+. "$base/lib/ush/load" fmt; _ansi
+. "$base/lib/ush/load" task
 
-_task-system --save-to "$BASE/.setup.tasks" "$@"
+_task-system --save-to "$base/.setup.tasks" "$@"
 
 if _task XCODE_SELECT; then
 	xcode-select --install
