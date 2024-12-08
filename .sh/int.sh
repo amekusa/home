@@ -42,6 +42,9 @@ alias nwatch='npm run watch'
 # pico8
 alias pico8='/Applications/PICO-8.app/Contents/MacOS/pico8'
 
+# iina
+alias iina='/Applications/IINA.app/Contents/MacOS/iina-cli'
+
 # vscodium
 alias code='/Applications/VSCodium.app/Contents/Resources/app/bin/codium'
 
