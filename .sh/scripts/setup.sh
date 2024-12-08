@@ -33,6 +33,20 @@ if _has-cmd nix; then
 	if _task NIX_ENV -r; then
 		nix-env -irf "$HOME/.env.nix"
 	fi
+
+	if [ -f '/etc/bashrc.backup-before-nix' ]; then
+		if _task NIX_BASHRC_REVERT; then
+			sudo cp -f '/etc/bashrc' '/etc/bashrc.backup-after-nix' || _fail
+			sudo cp -f '/etc/bashrc.backup-before-nix' '/etc/bashrc' || _fail
+		fi
+	fi
+
+	if [ -f '/etc/zshrc.backup-before-nix' ]; then
+		if _task NIX_ZSHRC_REVERT; then
+			sudo cp -f '/etc/zshrc' '/etc/zshrc.backup-after-nix' || _fail
+			sudo cp -f '/etc/zshrc.backup-before-nix' '/etc/zshrc' || _fail
+		fi
+	fi
 fi
 
 # NPM
