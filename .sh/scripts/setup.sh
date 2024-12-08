@@ -71,7 +71,7 @@ if _has-cmd npm; then
 fi
 
 # VSCodium
-if _has-path "/Applications/VSCodium.app"; then
+if [ -e "/Applications/VSCodium.app" ]; then
 	if _task VSCODIUM_CONFIG; then
 		exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
 		dir="$HOME/Library/Application Support/VSCodium/User"
