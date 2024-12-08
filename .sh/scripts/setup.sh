@@ -7,6 +7,7 @@
 #  Usage:
 #    setup.sh
 #    setup.sh --list
+#    setup.sh --prompt
 #    setup.sh --force <TASK_NAME>
 #
 # =========================================== *
@@ -19,64 +20,78 @@ BASE="$HOME/.sh"
 
 _task-system --save-to "$BASE/.setup.tasks" "$@"
 
+if _task XCODE_SELECT; then
+	xcode-select --install
+fi
 
-# ---- nix ----
-if _task NIX -r; then
-	_has-cmd nix || _fail "nix not found"
-	nix-env -irf "$HOME/.env.nix"
-_ksat; fi
+if _task GIT_CONFIG; then
+	git config --global core.excludesfile "~/.gitignore_global"
+fi
 
+# NIX
+if _has-cmd nix; then
+	if _task NIX_ENV -r; then
+		nix-env -irf "$HOME/.env.nix"
+	fi
+fi
 
-# ---- npm ----
-if _task NPM; then
-	_has-cmd npm || _fail "npm not found"
-	npm config set prefix "$(_dir "$NPM_PREFIX")"
-	pkgs=(
-		"npm-check-updates"
-		"npm-watch"
-		"c8"
-		"mocha"
-		"gulp"
-		"jsdoc"
-	)
-	for each in "${pkgs[@]}"; do
-		npm ls -g "$each" || npm install -g "$each"
-	done
-_ksat; fi
+# NPM
+if _has-cmd npm; then
+	if _task NPM_CONFIG; then
+		npm config set prefix "$(_dir "$NPM_PREFIX")"
+	fi
 
-
-# ---- vscodium ----
-if _task VSCODE; then
-	exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
-	dir="$HOME/Library/Application Support/VSCodium/User"
-	if [ -d "$dir" ]; then
-		files=(
-			"settings.json"
-			"keybindings.json"
-			"snippets"
+	if _task NPM_PKGS; then
+		pkgs=(
+			"npm-check-updates"
+			"npm-watch"
+			"c8"
+			"mocha"
+			"gulp"
+			"jsdoc"
 		)
-		for each in "${files[@]}"; do
-			src="$HOME/.vscode/$each"
-			_symlink -F "$src" "$dir/$each" &&
-			_success "Symlinked: '$src' > '$dir/$each'"
+		for each in "${pkgs[@]}"; do
+			npm ls -g "$each" || npm install -g "$each"
 		done
 	fi
-	extensions=(
-		# themes
-		"jdinhlife.gruvbox"
-		"paulvandermeijs.loved"
+fi
 
-		# utils
-		"EditorConfig.EditorConfig"
-		"marp-team.marp-vscode"
-		"alefragnani.Bookmarks"
-		"huntertran.auto-markdown-toc"
-		"wwm.better-align"
-	)
-	for each in "${extensions[@]}"; do
-		"$exe" --install-extension "$each" &&
-		_success "Installed VSCode extension '$each'"
-	done;
-_ksat; fi
+# VSCodium
+if _has-path "/Applications/VSCodium.app"; then
+	if _task VSCODIUM_CONFIG; then
+		exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
+		dir="$HOME/Library/Application Support/VSCodium/User"
+		if [ -d "$dir" ]; then
+			files=(
+				"settings.json"
+				"keybindings.json"
+				"snippets"
+			)
+			for each in "${files[@]}"; do
+				src="$HOME/.vscode/$each"
+				_symlink -F "$src" "$dir/$each" &&
+				_success "Symlinked: '$src' > '$dir/$each'"
+			done
+		fi
+	fi
+
+	if _task VSCODIUM_EXTENSIONS; then
+		extensions=(
+			# themes
+			"jdinhlife.gruvbox"
+
+			# utils
+			"EditorConfig.EditorConfig"
+			"marp-team.marp-vscode"
+			"alefragnani.Bookmarks"
+			"huntertran.auto-markdown-toc"
+			"wwm.better-align"
+		)
+		for each in "${extensions[@]}"; do
+			"$exe" --install-extension "$each" &&
+			_success "Installed VSCode extension '$each'"
+		done;
+	fi
+fi
 
 _success "Done."
