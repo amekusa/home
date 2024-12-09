@@ -72,20 +72,23 @@ fi
 
 # VSCodium
 if [ -e "/Applications/VSCodium.app" ]; then
-	if _task VSCODIUM_CONFIG; then
-		exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
-		dir="$HOME/Library/Application Support/VSCodium/User"
-		if [ -d "$dir" ]; then
-			files=(
-				"settings.json"
-				"keybindings.json"
-				"snippets"
-			)
-			for each in "${files[@]}"; do
-				src="$HOME/.vscode/$each"
-				_symlink -F "$src" "$dir/$each" &&
-				_success "Symlinked: '$src' > '$dir/$each'"
-			done
+	exe="/Applications/VSCodium.app/Contents/Resources/app/bin/codium"
+	dir="$HOME/Library/Application Support/VSCodium/User"
+
+	if [ -e "$dir" ]; then
+		if _task VSCODIUM_CONFIG; then
+			if [ -d "$dir" ]; then
+				files=(
+					"settings.json"
+					"keybindings.json"
+					"snippets"
+				)
+				for each in "${files[@]}"; do
+					src="$HOME/.vscode/$each"
+					_symlink -F "$src" "$dir/$each" &&
+					_success "Symlinked: '$src' > '$dir/$each'"
+				done
+			fi
 		fi
 	fi
 
