@@ -22,9 +22,6 @@ alias la='/bin/ls -pGhla'
 # run the previous command with sudo
 alias pls='sudo $(fc -ln -1)'
 
-# tmux
-alias tm='exec tmux'
-
 # lazygit
 alias lg='lazygit'
 
