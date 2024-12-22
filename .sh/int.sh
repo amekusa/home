@@ -57,6 +57,14 @@ alias fd='fd -u'  # force not hiding anything
 # wiki-tui
 alias wiki='wiki-tui'
 
+# tmux
+tm() {
+	if tmux has &> /dev/null
+		then exec tmux attach
+		else exec tmux new
+	fi
+}
+
 # md5
 md5() {
 	[ -n "$1" ] || return
