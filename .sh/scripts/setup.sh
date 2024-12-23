@@ -61,6 +61,7 @@ if _has-cmd npm; then
 			"npm-watch"
 			"c8"
 			"mocha"
+			"eslint"
 			"gulp"
 			"jsdoc"
 		)
