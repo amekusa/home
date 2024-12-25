@@ -50,7 +50,8 @@ sqlite
 ffmpeg-full  # video & audio processing tool
 chafa  # image viewer
 glow  # markdown viewer
-wordnet  # wordnet dictionary (wn)
+imagemagick  # image editor (cmd: magick)
+wordnet  # wordnet dictionary (cmd: wn)
 wiki-tui  # wikipedia viewer
 musikcube  # music
 nb  # note taking
