@@ -114,8 +114,20 @@ if [ -e "/Applications/VSCodium.app" ]; then
 		for each in "${extensions[@]}"; do
 			"$exe" --install-extension "$each" &&
 			_success "Installed VSCode extension '$each'"
-		done;
+		done
 	fi
+fi
+
+if _task IM_SELECT; then
+	src="https://github.com/daipeihust/im-select"
+	src="$src/raw/9cd5278b185a9d6daa12ba35471ec2cc1a2e3012"
+	dst="$base/bin/im-select"
+	case "$cpu" in
+		intel) src="$src/macOS/out/intel/im-select" ;;
+		*)     src="$src/macOS/out/apple/im-select" ;;
+	esac
+ 	curl -L --create-dirs -o "$dst" "$src"
+	chmod u+x "$dst"
 fi
 
 _success "Done."
