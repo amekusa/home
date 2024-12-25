@@ -1,5 +1,5 @@
-[submodule ".sh/lib/ush"]
-	path = .sh/lib/ush
+[submodule ".sh/modules/ush"]
+	path = .sh/modules/ush
 	url = https://github.com/amekusa/u.sh.git
 [submodule ".config/tmux"]
 	path = .config/tmux
@@ -7,18 +7,18 @@
 [submodule ".config/lf"]
 	path = .config/lf
 	url = https://github.com/amekusa/lf.config.git
-[submodule ".sh/lib/zsh-autosuggestions"]
-	path = .sh/lib/zsh-autosuggestions
+[submodule ".sh/modules/zsh-autosuggestions"]
+	path = .sh/modules/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule ".sh/lib/zsh-syntax-highlighting"]
-	path = .sh/lib/zsh-syntax-highlighting
+[submodule ".sh/modules/zsh-syntax-highlighting"]
+	path = .sh/modules/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
-[submodule ".sh/lib/zsh-completions"]
-	path = .sh/lib/zsh-completions
+[submodule ".sh/modules/zsh-completions"]
+	path = .sh/modules/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
-[submodule ".sh/lib/zsh-z"]
-	path = .sh/lib/zsh-z
+[submodule ".sh/modules/zsh-z"]
+	path = .sh/modules/zsh-z
 	url = https://github.com/agkozak/zsh-z
-[submodule ".sh/lib/powerlevel10k"]
-	path = .sh/lib/powerlevel10k
+[submodule ".sh/modules/powerlevel10k"]
+	path = .sh/modules/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k

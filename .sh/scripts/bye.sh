@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 BASE="$HOME/.sh"
-. "$BASE/lib/ush/load" fmt; _ansi
+. "$BASE/modules/ush/load" fmt; _ansi
 
 WAIT=45
 

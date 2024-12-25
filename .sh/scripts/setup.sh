@@ -13,10 +13,10 @@
 # =========================================== *
 
 base="$HOME/.sh"
-. "$base/lib/ush/load" util
-. "$base/lib/ush/load" io
-. "$base/lib/ush/load" fmt; _ansi
-. "$base/lib/ush/load" task
+. "$base/modules/ush/load" util
+. "$base/modules/ush/load" io
+. "$base/modules/ush/load" fmt; _ansi
+. "$base/modules/ush/load" task
 
 _task-system --save-to "$base/.setup.tasks" "$@"
 

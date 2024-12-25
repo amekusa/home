@@ -23,20 +23,20 @@ chpwd() {
 }
 
 # z
-. ~/.sh/lib/zsh-z/zsh-z.plugin.zsh
+. ~/.sh/modules/zsh-z/zsh-z.plugin.zsh
 
 # autosuggestions
-. ~/.sh/lib/zsh-autosuggestions/zsh-autosuggestions.zsh
+. ~/.sh/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 bindkey '^ ' autosuggest-accept
 
 # powerlevel10k
-. ~/.sh/lib/powerlevel10k/powerlevel10k.zsh-theme
+. ~/.sh/modules/powerlevel10k/powerlevel10k.zsh-theme
 . ~/.p10k.zsh
 #   NOTE: to customize, run `p10k configure`
 
 # syntax highlighting
-. ~/.sh/lib/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. ~/.sh/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #   NOTE: this line should be at the end of .zshrc
 
 # initialize the completion system

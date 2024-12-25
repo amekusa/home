@@ -61,11 +61,11 @@ export GEM_PATH="$GEM_HOME"
 PATH="$PATH:$GEM_HOME/bin"
 
 # odin
-export ODIN_ROOT="$HOME/.sh/lib/odin"
+export ODIN_ROOT="$HOME/.sh/modules/odin"
 PATH="$PATH:$ODIN_ROOT"
 #   NOTE: To install & build odin compiler:
-#         1. git clone https://github.com/odin-lang/Odin ~/.sh/lib/odin
-#         2. cd ~/.sh/lib/odin; make release-native
+#         1. git clone https://github.com/odin-lang/Odin ~/.sh/modules/odin
+#         2. cd ~/.sh/modules/odin; make release-native
 
 # user-end apps & scripts
 PATH="$PATH:$HOME/.local/bin"

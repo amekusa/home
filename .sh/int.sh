@@ -1,6 +1,6 @@
 # === INTERACTIVE SHELL UTIL ===
 
-. "$HOME/.sh/lib/ush/load" -p '' int
+. "$HOME/.sh/modules/ush/load" -p '' int
 
 
 # ---- aliases ----

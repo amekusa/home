@@ -3,8 +3,8 @@
 #  Download a YouTube video with the best quality of audio
 # ========================================================= *
 base="$HOME/.sh"
-. "$base/lib/ush/load" util
-. "$base/lib/ush/load" fmt; _ansi
+. "$base/modules/ush/load" util
+. "$base/modules/ush/load" fmt; _ansi
 
 _chk-cmd ffmpeg
 ytdl="$(_fb-cmd yt-dlp youtube-dl)" || _die "yt-dlp or youtube-dl is required"
