@@ -1,24 +1,25 @@
 with import <nixpkgs> {}; [
 
+# BASIC
 bash
 zsh
 openssl
 openssh
 
-# ESSENTIALS
-tmux
-wget
-jq
-ripgrep
-fzf
+# OS SPECIFIC
+darwin.trash  # cmd: trash
 
 # GENERAL UTILS
-darwin.trash
-nix-search-cli
-fd
-lf
-pstree
 bottom  # htop alternative (cmd: btm)
+fd  # find alternative
+fzf  # fuzzy finder
+jq  # json parser
+lf  # file manager
+nix-search-cli  # nixpkgs search
+pstree  # process tree viewer
+ripgrep  # grep alternative
+tmux  # terminal multiplexer
+wget  # file downloader
 
 # NETWORK UTILS
 nmap
@@ -47,16 +48,16 @@ php82Packages.composer
 sqlite
 
 # MISC.
-ffmpeg-full  # video & audio processing tool
 chafa  # image viewer
+cheat  # cheatsheet manager
+ffmpeg-full  # video & audio processing tool
 glow  # markdown viewer
 imagemagick  # image editor (cmd: magick)
-wordnet  # wordnet dictionary (cmd: wn)
-wiki-tui  # wikipedia viewer
 musikcube  # music
 nb  # note taking
-cheat  # cheatsheet manager
 vt-cli  # VirusTotal client
+wiki-tui  # wikipedia viewer
+wordnet  # wordnet dictionary (cmd: wn)
 
 # TOYS
 tenki  # clock for terminal
