@@ -69,6 +69,7 @@ PATH="$PATH:$ODIN_ROOT"
 
 # user-end apps & scripts
 PATH="$PATH:$HOME/.local/bin"
+PATH="$PATH:$HOME/.sh/bin"
 PATH="$PATH:$HOME/.sh/scripts"
 
 # done
