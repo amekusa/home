@@ -1,12 +1,12 @@
-[submodule ".sh/modules/ush"]
-	path = .sh/modules/ush
-	url = https://github.com/amekusa/u.sh.git
 [submodule ".config/tmux"]
 	path = .config/tmux
 	url = https://github.com/amekusa/tmux.config.git
 [submodule ".config/lf"]
 	path = .config/lf
 	url = https://github.com/amekusa/lf.config.git
+[submodule ".sh/modules/ush"]
+	path = .sh/modules/ush
+	url = https://github.com/amekusa/u.sh.git
 [submodule ".sh/modules/zsh-autosuggestions"]
 	path = .sh/modules/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
