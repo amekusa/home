@@ -18,6 +18,14 @@ base="$HOME/.sh"
 . "$base/modules/ush/load" fmt; _ansi
 . "$base/modules/ush/load" task
 
+# processor info
+case "$(_lower "$(sysctl -n machdep.cpu.brand_string)")" in
+	*intel*) cpu=intel ;;
+	*)       cpu=whatever ;;
+esac
+
+
+# --- TASKS ---
 _task-system --save-to "$base/.setup.tasks" "$@"
 
 if _task XCODE_SELECT; then
