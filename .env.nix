@@ -10,7 +10,7 @@ openssh
 darwin.trash  # cmd: trash
 
 # GENERAL UTILS
-bottom  # htop alternative (cmd: btm)
+btop  # activity monitor
 fd  # find alternative
 fzf  # fuzzy finder
 jq  # json parser
