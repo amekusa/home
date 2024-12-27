@@ -9,8 +9,42 @@ base="$HOME/.sh"
 _chk-cmd ffmpeg
 ytdl="$(_fb-cmd yt-dlp youtube-dl)" || _die "yt-dlp or youtube-dl is required"
 
+_help() {
+	cat <<- EOF
+	ytdl.sh [options] <src>
+
+	Options:
+	  -s, --size WxH : limit video size
+
+	EOF
+	exit 1
+}
+
+# ---- arguments ----
+while [ $# -gt 0 ]; do
+	case "$1" in
+	-h|--help)
+		_help
+		;;
+	-s|--size)
+		w="${2%%x*}"
+		h="${2##*x}"
+		shift
+		;;
+	-*)
+		_die "invalid argument '$1'"
+		;;
+	*)
+		break
+	esac
+	shift
+done
+
+[ -z "$w" ] || size="${size}[width<=${w}]"
+[ -z "$h" ] || size="${size}[height<=${h}]"
+
 # ---- config ----
-format="bestvideo[ext!=webm][height<=720]+bestaudio[ext!=webm]/bestvideo+bestaudio/best"
+format="bestvideo[ext!=webm]${size}+bestaudio[ext!=webm]/bestvideo+bestaudio/best"
 output="%(title)s #%(id)s"
 desc_ext=".desc.txt"
 opts="--ignore-config"
