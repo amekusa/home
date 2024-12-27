@@ -40,6 +40,8 @@ while [ $# -gt 0 ]; do
 	shift
 done
 
+[ $# -gt 0 ] || _help
+
 [ -z "$w" ] || size="${size}[width<=${w}]"
 [ -z "$h" ] || size="${size}[height<=${h}]"
 
