@@ -16,6 +16,13 @@ _help() {
 	Options:
 	  -s, --size WxH : limit video size
 
+	Examples:
+	  # Best quality
+	  ytdl.sh "https://www.youtube.com/watch?v=XXXXXX"
+
+	  # Limit video size up to 720p
+	  ytdl.sh -s x720 "https://www.youtube.com/watch?v=XXXXXX"
+
 	EOF
 	exit 1
 }
