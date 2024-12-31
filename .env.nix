@@ -48,6 +48,7 @@ php82Packages.composer
 sqlite
 
 # MISC.
+axel  # fast downloader
 chafa  # image viewer
 cheat  # cheatsheet manager
 ffmpeg-full  # video & audio processing tool
