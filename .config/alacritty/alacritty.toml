@@ -3,9 +3,9 @@
 
 [general]
 import = [
-	'~/.config/alacritty/themes/kanagawa.toml',
-	'~/.config/alacritty/default.toml',
-	'~/.config/alacritty/local.toml',
+	'themes/kanagawa.toml',
+	'default.toml',
+	'local.toml',
 ]
 
 [keyboard]
