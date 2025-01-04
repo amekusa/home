@@ -1,6 +1,7 @@
 # === Settings for Alacritty ===
 # Copy 'default.toml' as 'local.toml' to overwrite
 
+[general]
 import = [
 	'~/.config/alacritty/themes/kanagawa.toml',
 	'~/.config/alacritty/default.toml',
