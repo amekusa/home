@@ -54,6 +54,7 @@ cheat  # cheatsheet manager
 ffmpeg-full  # video & audio processing tool
 glow  # markdown viewer
 imagemagick  # image editor (cmd: magick)
+license-cli  # licence text generator
 musikcube  # music
 nb  # note taking
 vt-cli  # VirusTotal client
