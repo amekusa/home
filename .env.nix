@@ -37,6 +37,7 @@ lazygit
 # LANGUAGES
 shellcheck
 nodejs
+yarn
 go
 lua
 python311
@@ -57,6 +58,7 @@ imagemagick  # image editor (cmd: magick)
 license-cli  # licence text generator
 musikcube  # music
 nb  # note taking
+pastel  # color utility
 vt-cli  # VirusTotal client
 wiki-tui  # wikipedia viewer
 wordnet  # wordnet dictionary (cmd: wn)
