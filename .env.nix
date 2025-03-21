@@ -33,6 +33,8 @@ neovim
 git
 tig
 lazygit
+asciinema
+asciinema-agg
 
 # LANGUAGES
 shellcheck
