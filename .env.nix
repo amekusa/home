@@ -35,6 +35,7 @@ tig
 lazygit
 asciinema
 asciinema-agg
+watchexec  # Executes commands in response to file modifications
 
 # LANGUAGES
 shellcheck
@@ -59,6 +60,7 @@ glow  # markdown viewer
 imagemagick  # image editor (cmd: magick)
 license-cli  # licence text generator
 musikcube  # music
+monolith  # Bundle any web page into a single HTML file
 nb  # note taking
 pastel  # color utility
 vt-cli  # VirusTotal client
