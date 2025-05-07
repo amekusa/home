@@ -62,6 +62,30 @@ tm() {
 	fi
 }
 
+# git
+git-publish() {
+	if [ -z "$1" ] || [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+		cat <<- EOF
+		Usage:
+		  $0 <remote> <branch> <tag>
+		EOF
+		return 1
+	fi
+	local remote="$1"; shift
+	local branch="$1"; shift
+	local tag="$1"; shift
+	local curr="$(git branch --show-current)"
+	if [ "$branch" != "$curr" ]; then
+		git checkout "$branch" || return 1
+		git merge --no-ff "$curr" || return 1
+	fi
+	git push "$remote" "$branch"
+	if [ -n "$tag" ]; then
+		git tag "$tag" || return 1
+		git push "$remote" tag "$tag" || return 1
+	fi
+}
+
 # md5
 md5() {
 	[ -n "$1" ] || return
