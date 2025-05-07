@@ -79,11 +79,13 @@ git-publish() {
 		git checkout "$branch" || return 1
 		git merge --no-ff "$curr" || return 1
 	fi
-	git push "$remote" "$branch"
+	git push "$remote" "$branch" || return 1
 	if [ -n "$tag" ]; then
 		git tag "$tag" || return 1
 		git push "$remote" tag "$tag" || return 1
 	fi
+	git checkout "$curr" || return 1
+	git rebase "$branch" || return 1
 }
 
 # md5
