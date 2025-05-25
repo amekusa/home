@@ -33,6 +33,8 @@ neovim
 git
 tig
 lazygit
+license-cli
+pandoc
 asciinema
 asciinema-agg
 watchexec  # Executes commands in response to file modifications
@@ -56,11 +58,12 @@ axel  # fast downloader
 chafa  # image viewer
 cheat  # cheatsheet manager
 ffmpeg-full  # video & audio processing tool
+gifsicle  # gif image processing tool
 glow  # markdown viewer
+hugo  # website generator
 imagemagick  # image editor (cmd: magick)
-license-cli  # licence text generator
-musikcube  # music
 monolith  # Bundle any web page into a single HTML file
+musikcube  # music player
 nb  # note taking
 pastel  # color utility
 vt-cli  # VirusTotal client
