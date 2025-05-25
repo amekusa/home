@@ -39,7 +39,7 @@ fi
 # NIX
 if _has-cmd nix; then
 	if _task NIX_ENV -r; then
-		nix-env -irf "$HOME/.env.nix"
+		nix-env -irf "$HOME/.env.nix" || _fail
 	fi
 
 	if [ -e "/etc/bashrc.backup-before-nix" ] && [ ! -e "/etc/bashrc.backup-after-nix" ]; then
