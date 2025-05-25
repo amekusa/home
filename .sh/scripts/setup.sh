@@ -130,4 +130,16 @@ if _task IM_SELECT; then
 	chmod u+x "$dst"
 fi
 
+if _task MACISM; then
+	dst="$base/bin/macism"
+	src="https://github.com/laishulu/macism"
+	src="$src/releases/download/v1.4.6/macism"
+	case "$cpu" in
+		intel) src="$src-x86_64" ;;
+		*)     src="$src-arm64" ;;
+	esac
+ 	curl -L --create-dirs -o "$dst" "$src"
+	chmod u+x "$dst"
+fi
+
 _success "Done."
