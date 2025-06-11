@@ -9,7 +9,9 @@ else
 	_FIRST_LOGIN=0
 	PATH="$_DEF_PATH"
 	FPATH="$_DEF_FPATH"
-	[ "$env_nix" = 1 ] && unset __ETC_PROFILE_NIX_SOURCED
+
+	# reset nix-daemon.sh flag
+	unset __ETC_PROFILE_NIX_SOURCED
 fi
 
 # configuration
