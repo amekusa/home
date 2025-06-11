@@ -2,13 +2,14 @@
 
 # save/restore the system default PATH & FPATH
 if [ -z "$_FIRST_LOGIN" ]; then
-	export _FIRST_LOGIN=true
+	export _FIRST_LOGIN=1
 	export _DEF_PATH="$PATH"
 	export _DEF_FPATH="$FPATH"
 else
-	_FIRST_LOGIN=false
+	_FIRST_LOGIN=0
 	PATH="$_DEF_PATH"
 	FPATH="$_DEF_FPATH"
+	[ "$env_nix" = 1 ] && unset __ETC_PROFILE_NIX_SOURCED
 fi
 
 # configuration
