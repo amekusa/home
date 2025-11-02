@@ -100,7 +100,6 @@ img() {
 	local sym="sextant+quad+half+solid"
 	sym="$sym+u2582..u2586"
 	sym="$sym+u258b..u258d"
-	sym="$sym+u25cf" # ●
 	sym="$sym+u25a0" # ■
 	local opts=(
 		--symbols "$sym"
