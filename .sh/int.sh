@@ -100,10 +100,11 @@ img() {
 	local sym="sextant+quad+half+solid"
 	sym="$sym+u2582..u2586"
 	sym="$sym+u258b..u258d"
+	sym="$sym+u25cf" # ●
+	sym="$sym+u25a0" # ■
 	local opts=(
 		--symbols "$sym"
 		--color-space din99d
-		--preprocess on
 		--work 9
 	)
 	[ -n "$TMUX" ] && opts+=(--passthrough tmux)
