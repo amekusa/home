@@ -86,6 +86,7 @@ git-publish() {
 	fi
 	git checkout "$curr" || return 1
 	git rebase "$branch" || return 1
+	git push "$remote" || return 1
 }
 
 # md5
