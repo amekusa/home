@@ -56,15 +56,18 @@ done
 format="bestvideo[ext!=webm]${size}+bestaudio[ext!=webm]/bestvideo+bestaudio/best"
 output="%(title)s #%(id)s"
 desc_ext=".desc.txt"
-opts="--ignore-config"
+opts=(
+	--ignore-config
+	--js-runtimes node
+)
 # ================
 
-title="$($ytdl $opts -s --get-title $@)"
-desc="$title$LF$LF$($ytdl $opts -s --get-description $@)"
-filename="$($ytdl $opts -s -o "$output" --get-filename $@)"
+title="$($ytdl ${opts[@]} -s --get-title $@)"
+desc="$title$LF$LF$($ytdl ${opts[@]} -s --get-description $@)"
+filename="$($ytdl ${opts[@]} -s -o "$output" --get-filename $@)"
 echo "$desc"
 echo "-------- -"
 
-$ytdl $opts -f "$format" -o "$output.%(ext)s" $@ &&
+$ytdl ${opts[@]} -f "$format" -o "$output.%(ext)s" $@ &&
 echo "$desc" > "$filename$desc_ext"
 
