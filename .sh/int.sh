@@ -99,7 +99,7 @@ md5() {
 img() {
 	[ -n "$1" ] || return
 	local sym="sextant+quad+half+solid"
-	sym="$sym+u2582..u2586"
+	sym="$sym+u2581..u2587"
 	sym="$sym+u258b..u258d"
 	sym="$sym+u25a0" # ■
 	local opts=(
