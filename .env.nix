@@ -66,6 +66,7 @@ monolith  # Bundle any web page into a single HTML file
 musikcube  # music player
 nb  # note taking
 pastel  # color utility
+totp-cli  # authenticator client
 vt-cli  # VirusTotal client
 wiki-tui  # wikipedia viewer
 wordnet  # wordnet dictionary (cmd: wn)
