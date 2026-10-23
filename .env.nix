@@ -18,6 +18,7 @@ lf  # file manager
 nix-search-cli  # nixpkgs search
 pstree  # process tree viewer
 ripgrep  # grep alternative
+rsync # backup utility
 tmux  # terminal multiplexer
 wget  # file downloader
 
