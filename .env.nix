@@ -14,6 +14,7 @@ btop  # activity monitor
 fd  # find alternative
 fzf  # fuzzy finder
 jq  # json parser
+less # pager
 lf  # file manager
 nix-search-cli  # nixpkgs search
 pstree  # process tree viewer
