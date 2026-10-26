@@ -9,6 +9,8 @@
 !/.bashrc
 !/.zshrc
 
+!/.lesskey
+
 !/.sh/
 !/.sh/*.conf
 !/.sh/*.sh
