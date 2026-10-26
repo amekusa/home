@@ -8,6 +8,7 @@
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt EMACS  # force default keybindings (emacs-like)
+setopt IGNORE_EOF  # ignore ctrl+d
 
 # fn + delete = forward delete
 bindkey '^[[3~'  delete-char
