@@ -61,11 +61,13 @@ chafa  # image viewer
 cheat  # cheatsheet manager
 ffmpeg-full  # video & audio processing tool
 gifsicle  # gif image processing tool
+gh  # github cli
 glow  # markdown viewer
 hugo  # website generator
 imagemagick  # image editor (cmd: magick)
 monolith  # Bundle any web page into a single HTML file
 musikcube  # music player
+navi  # snippet manager
 nb  # note taking
 pastel  # color utility
 totp-cli  # authenticator client
