@@ -79,6 +79,10 @@ PATH="$PATH:$HOME/.sh/scripts"
 export PATH
 export FPATH
 
+# set default pager
+export PAGER="less -is"
+export MANPAGER="$PAGER"
+
 # set default editor
 if command -v nvim &> /dev/null
 	then export EDITOR=nvim
