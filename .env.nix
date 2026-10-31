@@ -23,6 +23,10 @@ rsync # backup utility
 tmux  # terminal multiplexer
 wget  # file downloader
 
+# FILE ARCHIVERS
+rar
+p7zip
+
 # NETWORK UTILS
 nmap
 arp-scan
