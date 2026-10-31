@@ -24,8 +24,9 @@ tmux  # terminal multiplexer
 wget  # file downloader
 
 # FILE ARCHIVERS
-rar
+gnutar
 p7zip
+rar
 
 # NETWORK UTILS
 nmap
