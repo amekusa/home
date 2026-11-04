@@ -22,6 +22,9 @@ alias la='/bin/ls -pGhla'
 # run the previous command with sudo
 alias pls='sudo $(fc -ln -1)'
 
+# git
+alias gsu='git submodule update --init --recursive'
+
 # lazygit
 alias lg='lazygit'
 
