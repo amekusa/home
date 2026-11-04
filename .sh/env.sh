@@ -80,8 +80,9 @@ export PATH
 export FPATH
 
 # set default pager
-export PAGER="less -is"
+export PAGER="less"
 export MANPAGER="$PAGER"
+export LESS="-is" # default options for less
 
 # set default editor
 if command -v nvim &> /dev/null
